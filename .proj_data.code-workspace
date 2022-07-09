@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"python.defaultInterpreterPath": "/Users/pro/Documents/a_env/proj_data/bin/python"
+	}
+}

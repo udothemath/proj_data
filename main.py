@@ -13,7 +13,12 @@ if __name__ == "__main__":
     print(yaml1)
     # print(yaml2)
 
-    file_html = 'demo_html_file.html'
+    file_html = 'demo_html.html'
+    yaml3 = quick_demo_yaml3(vars=yaml1, filename=file_html)
+    print(yaml3)
+
+    file_yaml_for_sql = 'demo_yaml_sql.yml'
+    file_sql = 'demo_sql_file.sql'
     yaml3 = quick_demo_yaml3(vars=yaml1, filename=file_html)
     print(yaml3)
 

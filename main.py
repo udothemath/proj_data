@@ -23,6 +23,18 @@ if __name__ == "__main__":
     var = quick_demo_yaml1(filename=file_yaml_for_sql)
     file_sql = 'demo_sql_v1.sql'
     result4 = quick_demo_yaml3(vars=var, filename=file_sql)
-    print(result4)
+    # print(result4)
+
+    file_yaml_for_sql = 'demo_yaml_sql.yml'
+    var = quick_demo_yaml1(filename=file_yaml_for_sql)
+    file_sql = 'demo_sql_v2.sql'
+    result5 = quick_demo_yaml3(vars=var, filename=file_sql)
+    print(result5)
+
+    # file_yaml_for_sql = 'demo_yaml_sql.yml'
+    # var = quick_demo_yaml1(filename=file_yaml_for_sql)
+    # file_sql = 'demo_sql_v3.sql'
+    # result6 = quick_demo_yaml3(vars=var, filename=file_sql)
+    # print(result6)
 
     print(" --- End --- ")

@@ -1,0 +1,6 @@
+-- SELECT {%
+-- for var in table2.query.variable %}
+--     {{var.varname}},{% endfor %}
+--     1 as dummy
+-- FROM "{{schema}}.{{table1.tablename}}"
+-- WHERE {{table2.query.variable.var4}} < "{{table2.query.condition.date}}

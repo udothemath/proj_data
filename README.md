@@ -2,8 +2,10 @@
 
 ### ToDo
 
-- [ ]Create branch
-- [ ]Add template
+- [x] Create branch
+- [x] Add template
+- [ ] Add current date
+- [ ] Add condition
 
 ### Reference
 

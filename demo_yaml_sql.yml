@@ -21,3 +21,10 @@ table2:
     condition:
       condition1: "date > 2022-07-09"
       condition2: "var_abc == 'abc'"
+table3:
+  comment: "note for the table3"
+  tablename: 'foo'
+  variable:
+      varname1: 'var1_foo1'
+      varname2: 'var1_foo2'
+      varname3: 'var1_foo3'

@@ -1,10 +1,12 @@
 schema: rawdata
-query:
-  variable:
-    var1: '123'
-    var2: 'abc'
-  condition:
-    date: 2022-07-09
+table1:
+  tablename: 'hello_world'
+  query:
+    variable:
+      var1: 'var1_customer'
+      var2: 'var2_order'
+    condition:
+      date: 2022-07-09
 
 # pkg:
 #   python:

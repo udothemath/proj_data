@@ -1,12 +1,13 @@
 schema: rawdata
 table1:
+  comment: "note for table1"
   tablename: 'hello_world'
   query:
     variable:
       var1: 'var1_customer'
       var2: 'var2_order'
 table2:
-  comment: "note for the task"
+  comment: "note for table2"
   tablename: 'foo'
   query:
     variable: 
@@ -22,9 +23,26 @@ table2:
       condition1: "date > 2022-07-09"
       condition2: "var_abc == 'abc'"
 table3:
-  comment: "note for the table3"
-  tablename: 'foo'
+  comment: "note for table3"
+  tablename: 'foo3'
+  tablename_as: 'as3'
   variable:
-      varname1: 'var1_foo1'
-      varname2: 'var1_foo2'
-      varname3: 'var1_foo3'
+      varname1: 'foo3_var1'
+      varname2: 'foo3_var2'
+      varname3: 'foo3_var3'
+table4:
+  comment: "note for table4"
+  tablename: 'foo4'
+  tablename_as: 'as4'
+  variable:
+      varname1: 'foo4_var1'
+      varname2: 'foo4_var2'
+      varname3: 'foo4_var3'
+  condition:
+      cond1: sum
+# SELECT c.id, c.first_name, c.last_name, c.gender, c.age, c.customer_since,   
+#        s.date AS sales_date, sum(s.amount) AS total_spent
+# FROM customers c
+# LEFT JOIN sales s
+# ON c.id = s.customer_id
+# GROUP BY c.id;

@@ -42,10 +42,11 @@ if __name__ == "__main__":
     result6 = quick_demo_yaml3(vars=yaml_vars, filename=file_sql)
     # print(result6)
 
-    from templates.demo_sql_pool import sql_a
-    result7 = Template(sql_a).render(yaml_vars)
-    print(result7)
+    from templates.demo_sql_pool import sql_v7, sql_v8
+    result = Template(sql_v7).render(yaml_vars)
+    print(result)
 
-    # quick_demo_yaml4()
+    result = Template(sql_v8).render(yaml_vars)
+    print(result)
 
     print(" ==== End ==== ")

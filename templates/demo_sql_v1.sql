@@ -1,3 +1,4 @@
+-- Comments: {{table1.comment}} 
 select
     {{table1
 .query.variable.var1}},

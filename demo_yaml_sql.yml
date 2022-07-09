@@ -6,6 +6,7 @@ table1:
       var1: 'var1_customer'
       var2: 'var2_order'
 table2:
+  comment: "note for the task"
   tablename: 'foo'
   query:
     variable: 
@@ -18,4 +19,5 @@ table2:
       - id: 4
         varname: 'date'
     condition:
-      date: 2022-07-09
+      condition1: "date > 2022-07-09"
+      condition2: "var_abc == 'abc'"

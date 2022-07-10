@@ -11,6 +11,8 @@
 
 - [Template Designer Documentation](https://jinja.palletsprojects.com/en/3.0.x/templates/)
 
+- [jinjasql](https://github.com/sripathikrishnan/jinjasql)
+
 - [postgresql@runoob](https://www.runoob.com/postgresql/postgresql-with.html)
 
 - [python-jinja](https://geek-docs.com/python/python-tutorial/python-jinja.html)

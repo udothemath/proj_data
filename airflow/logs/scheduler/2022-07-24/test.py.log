@@ -1,0 +1,322 @@
+[2022-07-24 23:37:07,881] {processor.py:153} INFO - Started process (PID=16005) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:37:07,882] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-24 23:37:07,884] {logging_mixin.py:115} INFO - [2022-07-24 23:37:07,883] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:37:07,896] {processor.py:651} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:37:07,958] {logging_mixin.py:115} INFO - [2022-07-24 23:37:07,958] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-24 23:37:07,979] {logging_mixin.py:115} INFO - [2022-07-24 23:37:07,978] {dag.py:2972} INFO - Setting next_dagrun for tutorial to 2022-07-23T15:37:07.978597+00:00, run_after=2022-07-24T15:37:07.978597+00:00
+[2022-07-24 23:37:07,994] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.118 seconds
+[2022-07-24 23:37:45,235] {processor.py:153} INFO - Started process (PID=16071) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:37:45,237] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-24 23:37:45,239] {logging_mixin.py:115} INFO - [2022-07-24 23:37:45,238] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:37:45,256] {processor.py:651} INFO - DAG(s) dict_keys(['test']) retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:37:45,396] {logging_mixin.py:115} INFO - [2022-07-24 23:37:45,396] {manager.py:508} INFO - Created Permission View: can edit on DAG:test
+[2022-07-24 23:37:45,417] {logging_mixin.py:115} INFO - [2022-07-24 23:37:45,417] {manager.py:508} INFO - Created Permission View: can delete on DAG:test
+[2022-07-24 23:37:45,431] {logging_mixin.py:115} INFO - [2022-07-24 23:37:45,430] {manager.py:508} INFO - Created Permission View: can read on DAG:test
+[2022-07-24 23:37:45,432] {logging_mixin.py:115} INFO - [2022-07-24 23:37:45,431] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-24 23:37:45,450] {logging_mixin.py:115} INFO - [2022-07-24 23:37:45,449] {dag.py:2439} INFO - Creating ORM DAG for test
+[2022-07-24 23:37:45,471] {logging_mixin.py:115} INFO - [2022-07-24 23:37:45,471] {dag.py:2972} INFO - Setting next_dagrun for test to 2022-07-23T15:37:45.470476+00:00, run_after=2022-07-24T15:37:45.470476+00:00
+[2022-07-24 23:37:45,499] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.272 seconds
+[2022-07-24 23:38:21,261] {processor.py:153} INFO - Started process (PID=16197) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:38:21,262] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-24 23:38:21,263] {logging_mixin.py:115} INFO - [2022-07-24 23:38:21,263] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:38:21,275] {processor.py:651} INFO - DAG(s) dict_keys(['test']) retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:38:21,297] {logging_mixin.py:115} INFO - [2022-07-24 23:38:21,296] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-24 23:38:21,321] {logging_mixin.py:115} INFO - [2022-07-24 23:38:21,321] {dag.py:2972} INFO - Setting next_dagrun for test to 2022-07-23T15:38:21.320687+00:00, run_after=2022-07-24T15:38:21.320687+00:00
+[2022-07-24 23:38:21,335] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.079 seconds
+[2022-07-24 23:39:00,426] {processor.py:153} INFO - Started process (PID=16286) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:39:00,428] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-24 23:39:00,430] {logging_mixin.py:115} INFO - [2022-07-24 23:39:00,429] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:39:00,438] {logging_mixin.py:115} INFO - [2022-07-24 23:39:00,434] {dagbag.py:321} ERROR - Failed to import: /Users/pro/Documents/proj_data/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/Users/pro/Documents/a_env/proj_data/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/pro/Documents/proj_data/airflow/dags/test.py", line 67
+    catchup=False,
+          ^
+SyntaxError: invalid syntax
+[2022-07-24 23:39:00,439] {processor.py:653} WARNING - No viable dags retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:39:00,474] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.056 seconds
+[2022-07-24 23:39:37,117] {processor.py:153} INFO - Started process (PID=16369) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:39:37,119] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-24 23:39:37,122] {logging_mixin.py:115} INFO - [2022-07-24 23:39:37,121] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:39:37,128] {logging_mixin.py:115} INFO - [2022-07-24 23:39:37,126] {dagbag.py:321} ERROR - Failed to import: /Users/pro/Documents/proj_data/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/Users/pro/Documents/a_env/proj_data/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/pro/Documents/proj_data/airflow/dags/test.py", line 44
+    'onwer'='fu',
+           ^
+SyntaxError: invalid syntax
+[2022-07-24 23:39:37,129] {processor.py:653} WARNING - No viable dags retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:39:37,164] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.055 seconds
+[2022-07-24 23:40:17,327] {processor.py:153} INFO - Started process (PID=16454) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:40:17,330] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-24 23:40:17,332] {logging_mixin.py:115} INFO - [2022-07-24 23:40:17,331] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:40:17,340] {logging_mixin.py:115} INFO - [2022-07-24 23:40:17,337] {dagbag.py:321} ERROR - Failed to import: /Users/pro/Documents/proj_data/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/Users/pro/Documents/a_env/proj_data/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/pro/Documents/proj_data/airflow/dags/test.py", line 44
+    'onwer'='fu',
+           ^
+SyntaxError: invalid syntax
+[2022-07-24 23:40:17,341] {processor.py:653} WARNING - No viable dags retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:40:17,376] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.057 seconds
+[2022-07-24 23:40:55,754] {processor.py:153} INFO - Started process (PID=16583) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:40:55,756] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-24 23:40:55,759] {logging_mixin.py:115} INFO - [2022-07-24 23:40:55,758] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:40:55,767] {logging_mixin.py:115} INFO - [2022-07-24 23:40:55,764] {dagbag.py:321} ERROR - Failed to import: /Users/pro/Documents/proj_data/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/Users/pro/Documents/a_env/proj_data/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/pro/Documents/proj_data/airflow/dags/test.py", line 45
+    'onwer'='fu',
+           ^
+SyntaxError: invalid syntax
+[2022-07-24 23:40:55,768] {processor.py:653} WARNING - No viable dags retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:40:55,802] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.055 seconds
+[2022-07-24 23:41:37,868] {processor.py:153} INFO - Started process (PID=16648) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:41:37,870] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-24 23:41:37,872] {logging_mixin.py:115} INFO - [2022-07-24 23:41:37,871] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:41:37,880] {logging_mixin.py:115} INFO - [2022-07-24 23:41:37,877] {dagbag.py:321} ERROR - Failed to import: /Users/pro/Documents/proj_data/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/Users/pro/Documents/a_env/proj_data/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/pro/Documents/proj_data/airflow/dags/test.py", line 45
+    'onwer'='fu',
+           ^
+SyntaxError: invalid syntax
+[2022-07-24 23:41:37,881] {processor.py:653} WARNING - No viable dags retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:41:37,918] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.057 seconds
+[2022-07-24 23:42:17,403] {processor.py:153} INFO - Started process (PID=16683) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:42:17,404] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-24 23:42:17,406] {logging_mixin.py:115} INFO - [2022-07-24 23:42:17,405] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:42:17,413] {logging_mixin.py:115} INFO - [2022-07-24 23:42:17,411] {dagbag.py:321} ERROR - Failed to import: /Users/pro/Documents/proj_data/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/Users/pro/Documents/a_env/proj_data/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/pro/Documents/proj_data/airflow/dags/test.py", line 45
+    'onwer'='fu',
+           ^
+SyntaxError: invalid syntax
+[2022-07-24 23:42:17,414] {processor.py:653} WARNING - No viable dags retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:42:17,449] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.056 seconds
+[2022-07-24 23:42:57,940] {processor.py:153} INFO - Started process (PID=16746) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:42:57,943] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-24 23:42:57,945] {logging_mixin.py:115} INFO - [2022-07-24 23:42:57,944] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:42:57,954] {logging_mixin.py:115} INFO - [2022-07-24 23:42:57,950] {dagbag.py:321} ERROR - Failed to import: /Users/pro/Documents/proj_data/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/Users/pro/Documents/a_env/proj_data/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/pro/Documents/proj_data/airflow/dags/test.py", line 45
+    'onwer'='fu',
+           ^
+SyntaxError: invalid syntax
+[2022-07-24 23:42:57,955] {processor.py:653} WARNING - No viable dags retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:42:57,994] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.071 seconds
+[2022-07-24 23:43:36,301] {processor.py:153} INFO - Started process (PID=16860) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:43:36,303] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-24 23:43:36,305] {logging_mixin.py:115} INFO - [2022-07-24 23:43:36,305] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:43:36,313] {logging_mixin.py:115} INFO - [2022-07-24 23:43:36,310] {dagbag.py:321} ERROR - Failed to import: /Users/pro/Documents/proj_data/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/Users/pro/Documents/a_env/proj_data/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/pro/Documents/proj_data/airflow/dags/test.py", line 45
+    'owner'='fu',
+           ^
+SyntaxError: invalid syntax
+[2022-07-24 23:43:36,314] {processor.py:653} WARNING - No viable dags retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:43:36,346] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.053 seconds
+[2022-07-24 23:44:17,005] {processor.py:153} INFO - Started process (PID=17025) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:44:17,006] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-24 23:44:17,008] {logging_mixin.py:115} INFO - [2022-07-24 23:44:17,007] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:44:17,018] {logging_mixin.py:115} INFO - [2022-07-24 23:44:17,015] {dagbag.py:321} ERROR - Failed to import: /Users/pro/Documents/proj_data/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/Users/pro/Documents/a_env/proj_data/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/pro/Documents/proj_data/airflow/dags/test.py", line 33, in <module>
+    from airflow.utils.dattes import days_ago
+ModuleNotFoundError: No module named 'airflow.utils.dattes'
+[2022-07-24 23:44:17,019] {processor.py:653} WARNING - No viable dags retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:44:17,050] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.053 seconds
+[2022-07-24 23:44:55,229] {processor.py:153} INFO - Started process (PID=17132) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:44:55,231] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-24 23:44:55,233] {logging_mixin.py:115} INFO - [2022-07-24 23:44:55,232] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:44:55,245] {logging_mixin.py:115} INFO - [2022-07-24 23:44:55,241] {dagbag.py:321} ERROR - Failed to import: /Users/pro/Documents/proj_data/airflow/dags/test.py
+Traceback (most recent call last):
+  File "/Users/pro/Documents/a_env/proj_data/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/pro/Documents/proj_data/airflow/dags/test.py", line 33, in <module>
+    from airflow.utils.datetime import days_ago
+ModuleNotFoundError: No module named 'airflow.utils.datetime'
+[2022-07-24 23:44:55,246] {processor.py:653} WARNING - No viable dags retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:44:55,278] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.057 seconds
+[2022-07-24 23:45:36,234] {processor.py:153} INFO - Started process (PID=17244) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:45:36,237] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-24 23:45:36,239] {logging_mixin.py:115} INFO - [2022-07-24 23:45:36,238] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:45:36,348] {processor.py:651} INFO - DAG(s) dict_keys(['test']) retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:45:37,595] {logging_mixin.py:115} INFO - [2022-07-24 23:45:37,589] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-24 23:45:37,757] {logging_mixin.py:115} INFO - [2022-07-24 23:45:37,757] {dag.py:2972} INFO - Setting next_dagrun for test to 2022-07-23T15:45:37.755351+00:00, run_after=2022-07-24T15:45:37.755351+00:00
+[2022-07-24 23:45:37,855] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 1.479 seconds
+[2022-07-24 23:46:19,988] {processor.py:153} INFO - Started process (PID=17304) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:46:19,989] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-24 23:46:19,991] {logging_mixin.py:115} INFO - [2022-07-24 23:46:19,991] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:46:19,999] {processor.py:651} INFO - DAG(s) dict_keys(['test']) retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:46:20,036] {logging_mixin.py:115} INFO - [2022-07-24 23:46:20,035] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-24 23:46:20,078] {logging_mixin.py:115} INFO - [2022-07-24 23:46:20,078] {dag.py:2972} INFO - Setting next_dagrun for test to 2022-07-23T15:46:20.077476+00:00, run_after=2022-07-24T15:46:20.077476+00:00
+[2022-07-24 23:46:20,104] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.125 seconds
+[2022-07-24 23:51:39,920] {processor.py:153} INFO - Started process (PID=17378) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:51:39,922] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-24 23:51:39,923] {logging_mixin.py:115} INFO - [2022-07-24 23:51:39,923] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:51:39,928] {processor.py:651} INFO - DAG(s) dict_keys(['test']) retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-24 23:51:39,949] {logging_mixin.py:115} INFO - [2022-07-24 23:51:39,948] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-24 23:51:39,973] {logging_mixin.py:115} INFO - [2022-07-24 23:51:39,973] {dag.py:2972} INFO - Setting next_dagrun for test to 2022-07-23T15:51:39.973233+00:00, run_after=2022-07-24T15:51:39.973233+00:00
+[2022-07-24 23:51:39,988] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.073 seconds
+[2022-07-25 00:22:49,711] {processor.py:153} INFO - Started process (PID=17462) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 00:22:49,864] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-25 00:22:49,882] {logging_mixin.py:115} INFO - [2022-07-25 00:22:49,878] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 00:22:49,964] {processor.py:651} INFO - DAG(s) dict_keys(['test']) retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 00:22:50,294] {logging_mixin.py:115} INFO - [2022-07-25 00:22:50,290] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-25 00:22:50,437] {logging_mixin.py:115} INFO - [2022-07-25 00:22:50,435] {dag.py:2972} INFO - Setting next_dagrun for test to 2022-07-23T16:22:50.434250+00:00, run_after=2022-07-24T16:22:50.434250+00:00
+[2022-07-25 00:22:50,488] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.864 seconds
+[2022-07-25 00:23:30,221] {processor.py:153} INFO - Started process (PID=17536) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 00:23:30,222] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-25 00:23:30,223] {logging_mixin.py:115} INFO - [2022-07-25 00:23:30,223] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 00:23:30,229] {processor.py:651} INFO - DAG(s) dict_keys(['test']) retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 00:23:30,251] {logging_mixin.py:115} INFO - [2022-07-25 00:23:30,250] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-25 00:23:30,277] {logging_mixin.py:115} INFO - [2022-07-25 00:23:30,277] {dag.py:2972} INFO - Setting next_dagrun for test to 2022-07-23T16:23:30.276979+00:00, run_after=2022-07-24T16:23:30.276979+00:00
+[2022-07-25 00:23:30,296] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.080 seconds
+[2022-07-25 00:37:36,931] {processor.py:153} INFO - Started process (PID=17605) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 00:37:36,938] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-25 00:37:36,949] {logging_mixin.py:115} INFO - [2022-07-25 00:37:36,945] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 00:37:36,986] {processor.py:651} INFO - DAG(s) dict_keys(['test']) retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 00:37:37,144] {logging_mixin.py:115} INFO - [2022-07-25 00:37:37,141] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-25 00:37:37,311] {logging_mixin.py:115} INFO - [2022-07-25 00:37:37,309] {dag.py:2972} INFO - Setting next_dagrun for test to 2022-07-23T16:37:37.306915+00:00, run_after=2022-07-24T16:37:37.306915+00:00
+[2022-07-25 00:37:37,410] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.510 seconds
+[2022-07-25 00:38:21,937] {processor.py:153} INFO - Started process (PID=17651) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 00:38:21,938] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-25 00:38:21,940] {logging_mixin.py:115} INFO - [2022-07-25 00:38:21,939] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 00:38:21,947] {processor.py:651} INFO - DAG(s) dict_keys(['test']) retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 00:38:21,969] {logging_mixin.py:115} INFO - [2022-07-25 00:38:21,968] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-25 00:38:21,991] {logging_mixin.py:115} INFO - [2022-07-25 00:38:21,991] {dag.py:2972} INFO - Setting next_dagrun for test to 2022-07-23T16:38:21.991293+00:00, run_after=2022-07-24T16:38:21.991293+00:00
+[2022-07-25 00:38:22,007] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.075 seconds
+[2022-07-25 00:52:37,444] {processor.py:153} INFO - Started process (PID=17700) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 00:52:37,450] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-25 00:52:37,459] {logging_mixin.py:115} INFO - [2022-07-25 00:52:37,456] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 00:52:37,496] {processor.py:651} INFO - DAG(s) dict_keys(['test']) retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 00:52:37,695] {logging_mixin.py:115} INFO - [2022-07-25 00:52:37,693] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-25 00:52:37,888] {logging_mixin.py:115} INFO - [2022-07-25 00:52:37,885] {dag.py:2972} INFO - Setting next_dagrun for test to 2022-07-23T16:52:37.882561+00:00, run_after=2022-07-24T16:52:37.882561+00:00
+[2022-07-25 00:52:37,987] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.582 seconds
+[2022-07-25 01:12:44,378] {processor.py:153} INFO - Started process (PID=17772) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 01:12:44,379] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-25 01:12:44,380] {logging_mixin.py:115} INFO - [2022-07-25 01:12:44,380] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 01:12:44,384] {processor.py:651} INFO - DAG(s) dict_keys(['test']) retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 01:12:44,402] {logging_mixin.py:115} INFO - [2022-07-25 01:12:44,402] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-25 01:12:44,423] {logging_mixin.py:115} INFO - [2022-07-25 01:12:44,423] {dag.py:2972} INFO - Setting next_dagrun for test to 2022-07-23T17:12:44.422753+00:00, run_after=2022-07-24T17:12:44.422753+00:00
+[2022-07-25 01:12:44,436] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.062 seconds
+[2022-07-25 01:13:44,565] {processor.py:153} INFO - Started process (PID=17822) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 01:13:44,569] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-25 01:13:44,573] {logging_mixin.py:115} INFO - [2022-07-25 01:13:44,572] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 01:13:44,587] {processor.py:651} INFO - DAG(s) dict_keys(['test']) retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 01:13:44,651] {logging_mixin.py:115} INFO - [2022-07-25 01:13:44,648] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-25 01:13:44,727] {logging_mixin.py:115} INFO - [2022-07-25 01:13:44,726] {dag.py:2972} INFO - Setting next_dagrun for test to 2022-07-23T17:13:44.725352+00:00, run_after=2022-07-24T17:13:44.725352+00:00
+[2022-07-25 01:13:44,770] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.221 seconds
+[2022-07-25 01:14:20,932] {processor.py:153} INFO - Started process (PID=17861) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 01:14:20,933] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-25 01:14:20,934] {logging_mixin.py:115} INFO - [2022-07-25 01:14:20,934] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 01:14:20,939] {processor.py:651} INFO - DAG(s) dict_keys(['test']) retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 01:14:20,960] {logging_mixin.py:115} INFO - [2022-07-25 01:14:20,959] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-25 01:14:20,983] {logging_mixin.py:115} INFO - [2022-07-25 01:14:20,983] {dag.py:2972} INFO - Setting next_dagrun for test to 2022-07-23T17:14:20.982812+00:00, run_after=2022-07-24T17:14:20.982812+00:00
+[2022-07-25 01:14:20,998] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.071 seconds
+[2022-07-25 01:28:36,443] {processor.py:153} INFO - Started process (PID=17928) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 01:28:36,452] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-25 01:28:36,460] {logging_mixin.py:115} INFO - [2022-07-25 01:28:36,458] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 01:28:36,499] {processor.py:651} INFO - DAG(s) dict_keys(['test']) retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 01:28:36,673] {logging_mixin.py:115} INFO - [2022-07-25 01:28:36,670] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-25 01:28:36,908] {logging_mixin.py:115} INFO - [2022-07-25 01:28:36,904] {dag.py:2972} INFO - Setting next_dagrun for test to 2022-07-23T17:28:36.902072+00:00, run_after=2022-07-24T17:28:36.902072+00:00
+[2022-07-25 01:28:37,049] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.641 seconds
+[2022-07-25 01:29:14,677] {processor.py:153} INFO - Started process (PID=17969) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 01:29:14,678] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-25 01:29:14,679] {logging_mixin.py:115} INFO - [2022-07-25 01:29:14,679] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 01:29:14,685] {processor.py:651} INFO - DAG(s) dict_keys(['test']) retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 01:29:14,707] {logging_mixin.py:115} INFO - [2022-07-25 01:29:14,706] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-25 01:29:14,733] {logging_mixin.py:115} INFO - [2022-07-25 01:29:14,732] {dag.py:2972} INFO - Setting next_dagrun for test to 2022-07-23T17:29:14.732505+00:00, run_after=2022-07-24T17:29:14.732505+00:00
+[2022-07-25 01:29:14,748] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.077 seconds
+[2022-07-25 01:29:51,123] {processor.py:153} INFO - Started process (PID=18020) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 01:29:51,126] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-25 01:29:51,127] {logging_mixin.py:115} INFO - [2022-07-25 01:29:51,127] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 01:29:51,134] {processor.py:651} INFO - DAG(s) dict_keys(['test']) retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 01:29:51,159] {logging_mixin.py:115} INFO - [2022-07-25 01:29:51,159] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-25 01:29:51,190] {logging_mixin.py:115} INFO - [2022-07-25 01:29:51,189] {dag.py:2972} INFO - Setting next_dagrun for test to 2022-07-23T17:29:51.189468+00:00, run_after=2022-07-24T17:29:51.189468+00:00
+[2022-07-25 01:29:51,208] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.091 seconds
+[2022-07-25 01:30:26,517] {processor.py:153} INFO - Started process (PID=18061) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 01:30:26,518] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-25 01:30:26,520] {logging_mixin.py:115} INFO - [2022-07-25 01:30:26,519] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 01:30:26,526] {processor.py:651} INFO - DAG(s) dict_keys(['test']) retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 01:30:26,554] {logging_mixin.py:115} INFO - [2022-07-25 01:30:26,553] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-25 01:30:26,586] {logging_mixin.py:115} INFO - [2022-07-25 01:30:26,585] {dag.py:2972} INFO - Setting next_dagrun for test to 2022-07-23T17:30:26.585094+00:00, run_after=2022-07-24T17:30:26.585094+00:00
+[2022-07-25 01:30:26,605] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.094 seconds
+[2022-07-25 01:43:36,470] {processor.py:153} INFO - Started process (PID=18146) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 01:43:36,480] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-25 01:43:36,493] {logging_mixin.py:115} INFO - [2022-07-25 01:43:36,490] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 01:43:36,534] {processor.py:651} INFO - DAG(s) dict_keys(['test']) retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 01:43:36,757] {logging_mixin.py:115} INFO - [2022-07-25 01:43:36,754] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-25 01:43:36,962] {logging_mixin.py:115} INFO - [2022-07-25 01:43:36,959] {dag.py:2972} INFO - Setting next_dagrun for test to 2022-07-23T17:43:36.956778+00:00, run_after=2022-07-24T17:43:36.956778+00:00
+[2022-07-25 01:43:37,102] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.677 seconds
+[2022-07-25 01:58:28,287] {processor.py:153} INFO - Started process (PID=18214) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 01:58:28,294] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-25 01:58:28,307] {logging_mixin.py:115} INFO - [2022-07-25 01:58:28,303] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 01:58:28,343] {processor.py:651} INFO - DAG(s) dict_keys(['test']) retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 01:58:28,568] {logging_mixin.py:115} INFO - [2022-07-25 01:58:28,566] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-25 01:58:28,841] {logging_mixin.py:115} INFO - [2022-07-25 01:58:28,838] {dag.py:2972} INFO - Setting next_dagrun for test to 2022-07-23T17:58:28.834790+00:00, run_after=2022-07-24T17:58:28.834790+00:00
+[2022-07-25 01:58:28,979] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.740 seconds
+[2022-07-25 04:58:37,090] {processor.py:153} INFO - Started process (PID=18314) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 04:58:37,098] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-25 04:58:37,106] {logging_mixin.py:115} INFO - [2022-07-25 04:58:37,104] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 04:58:37,138] {processor.py:651} INFO - DAG(s) dict_keys(['test']) retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 04:58:37,285] {logging_mixin.py:115} INFO - [2022-07-25 04:58:37,282] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-25 04:58:37,483] {logging_mixin.py:115} INFO - [2022-07-25 04:58:37,480] {dag.py:2972} INFO - Setting next_dagrun for test to 2022-07-23T20:58:37.477967+00:00, run_after=2022-07-24T20:58:37.477967+00:00
+[2022-07-25 04:58:37,588] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.532 seconds
+[2022-07-25 05:58:16,582] {processor.py:153} INFO - Started process (PID=18371) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 05:58:16,589] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
+[2022-07-25 05:58:16,600] {logging_mixin.py:115} INFO - [2022-07-25 05:58:16,597] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 05:58:16,632] {processor.py:651} INFO - DAG(s) dict_keys(['test']) retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
+[2022-07-25 05:58:16,808] {logging_mixin.py:115} INFO - [2022-07-25 05:58:16,804] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-25 05:58:17,082] {logging_mixin.py:115} INFO - [2022-07-25 05:58:17,077] {dag.py:2972} INFO - Setting next_dagrun for test to 2022-07-23T21:58:17.073880+00:00, run_after=2022-07-24T21:58:17.073880+00:00
+[2022-07-25 05:58:17,238] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.686 seconds

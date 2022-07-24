@@ -1,0 +1,28 @@
+[2022-07-29 04:44:55,509] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: a_test.test_say_hello scheduled__2022-07-27T15:12:45.850485+00:00 [queued]>
+[2022-07-29 04:44:55,518] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: a_test.test_say_hello scheduled__2022-07-27T15:12:45.850485+00:00 [queued]>
+[2022-07-29 04:44:55,518] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-29 04:44:55,518] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2022-07-29 04:44:55,518] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-29 04:44:55,597] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): test_say_hello> on 2022-07-27 15:12:45.850485+00:00
+[2022-07-29 04:44:55,600] {standard_task_runner.py:52} INFO - Started process 86182 to run task
+[2022-07-29 04:44:55,606] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'a_test', 'test_say_hello', 'scheduled__2022-07-27T15:12:45.850485+00:00', '--job-id', '26', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/var/folders/0s/6831mwss3ngbr2rh0337_18r0000gn/T/tmp_2hv57g7', '--error-file', '/var/folders/0s/6831mwss3ngbr2rh0337_18r0000gn/T/tmpal26qcge']
+[2022-07-29 04:44:55,646] {standard_task_runner.py:80} INFO - Job 26: Subtask test_say_hello
+[2022-07-29 06:43:25,574] {task_command.py:371} INFO - Running <TaskInstance: a_test.test_say_hello scheduled__2022-07-27T15:12:45.850485+00:00 [running]> on host Fu-Changs-MacBook-Pro.local
+[2022-07-29 06:43:30,904] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=anappleaday1984@gmail.com
+AIRFLOW_CTX_DAG_OWNER=fu
+AIRFLOW_CTX_DAG_ID=a_test
+AIRFLOW_CTX_TASK_ID=test_say_hello
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-27T15:12:45.850485+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-07-27T15:12:45.850485+00:00
+[2022-07-29 06:43:30,913] {logging_mixin.py:115} INFO - Some info
+[2022-07-29 06:43:30,913] {logging_mixin.py:115} INFO - "How are you doing?"
+[2022-07-29 06:43:30,914] {logging_mixin.py:115} INFO - Hello airflow "How are you doing?"
+[2022-07-29 06:43:30,914] {logging_mixin.py:115} INFO - The mode: None
+[2022-07-29 06:43:30,914] {python.py:173} INFO - Done. Returned value was: None
+[2022-07-29 06:43:30,924] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=a_test, task_id=test_say_hello, execution_date=20220727T151245, start_date=20220728T204455, end_date=20220728T224330
+[2022-07-29 06:43:31,001] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-07-29 06:43:31,034] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

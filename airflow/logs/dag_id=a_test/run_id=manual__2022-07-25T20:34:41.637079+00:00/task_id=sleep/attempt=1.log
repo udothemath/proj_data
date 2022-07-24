@@ -1,0 +1,28 @@
+[2022-07-26 04:35:53,955] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: a_test.sleep manual__2022-07-25T20:34:41.637079+00:00 [queued]>
+[2022-07-26 04:35:53,962] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: a_test.sleep manual__2022-07-25T20:34:41.637079+00:00 [queued]>
+[2022-07-26 04:35:53,962] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-26 04:35:53,962] {taskinstance.py:1377} INFO - Starting attempt 1 of 4
+[2022-07-26 04:35:53,962] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-26 04:35:53,974] {taskinstance.py:1397} INFO - Executing <Task(BashOperator): sleep> on 2022-07-25 20:34:41.637079+00:00
+[2022-07-26 04:35:53,976] {standard_task_runner.py:52} INFO - Started process 32954 to run task
+[2022-07-26 04:35:53,984] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'a_test', 'sleep', 'manual__2022-07-25T20:34:41.637079+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/var/folders/0s/6831mwss3ngbr2rh0337_18r0000gn/T/tmp1h7lsp3y', '--error-file', '/var/folders/0s/6831mwss3ngbr2rh0337_18r0000gn/T/tmpzp77unfi']
+[2022-07-26 04:35:53,986] {standard_task_runner.py:80} INFO - Job 14: Subtask sleep
+[2022-07-26 04:35:59,050] {task_command.py:371} INFO - Running <TaskInstance: a_test.sleep manual__2022-07-25T20:34:41.637079+00:00 [running]> on host Fu-Changs-MacBook-Pro.local
+[2022-07-26 04:36:04,116] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=anappleaday1984@gmail.com
+AIRFLOW_CTX_DAG_OWNER=fu
+AIRFLOW_CTX_DAG_ID=a_test
+AIRFLOW_CTX_TASK_ID=sleep
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-25T20:34:41.637079+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-07-25T20:34:41.637079+00:00
+[2022-07-26 04:36:04,118] {subprocess.py:62} INFO - Tmp dir root location: 
+ /var/folders/0s/6831mwss3ngbr2rh0337_18r0000gn/T
+[2022-07-26 04:36:04,119] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'sleep 5']
+[2022-07-26 04:36:04,126] {subprocess.py:85} INFO - Output:
+[2022-07-26 04:36:09,137] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-07-26 04:36:09,171] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=a_test, task_id=sleep, execution_date=20220725T203441, start_date=20220725T203553, end_date=20220725T203609
+[2022-07-26 04:36:14,077] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-07-26 04:36:14,094] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

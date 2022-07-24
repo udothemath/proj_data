@@ -1,3 +1,4 @@
 __pycache__/
 .vscode/
+templates/__pycache__/
 .proj_data.code-workspace

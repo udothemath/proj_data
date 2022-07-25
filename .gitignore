@@ -1,4 +1,8 @@
 __pycache__/
 .vscode/
 .proj_data.code-workspace
+<<<<<<< HEAD
 airflow/*
+=======
+airflow/logs/*
+>>>>>>> feat: add airflow example

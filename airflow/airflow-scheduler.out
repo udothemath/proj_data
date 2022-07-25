@@ -9,3 +9,71 @@
 [[34m2022-07-24 23:22:02,928[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
 [[34m2022-07-24 23:27:03,068[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
 [[34m2022-07-24 23:32:03,220[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-24 23:37:03,372[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-24 23:42:03,624[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-24 23:51:38,096[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-25 00:58:03,137[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-25 01:30:33,507[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-25 08:57:53,493[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-25 08:57:53,505[0m] {[34mscheduler_job.py:[0m1256} INFO[0m - Marked 1 SchedulerJob instances as failed[0m
+[[34m2022-07-25 21:48:31,978[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-25 21:53:32,118[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-25 21:58:32,253[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-25 22:03:32,735[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-25 22:56:36,943[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-25 22:56:36,948[0m] {[34mscheduler_job.py:[0m1256} INFO[0m - Marked 1 SchedulerJob instances as failed[0m
+[[34m2022-07-25 23:01:36,899[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-25 23:06:37,137[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-25 23:11:37,382[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-25 23:12:51,131[0m] {[34mdag.py:[0m2972} INFO[0m - Setting next_dagrun for a_test to 2022-07-25T15:12:45.850485+00:00, run_after=2022-07-26T15:12:45.850485+00:00[0m
+[[34m2022-07-25 23:12:51,175[0m] {[34mdagrun.py:[0m564} INFO[0m - Marking run <DagRun a_test @ 2022-07-24 15:12:45.850485+00:00: scheduled__2022-07-24T15:12:45.850485+00:00, externally triggered: False> successful[0m
+[[34m2022-07-25 23:12:51,180[0m] {[34mdagrun.py:[0m624} INFO[0m - DagRun Finished: dag_id=a_test, execution_date=2022-07-24 15:12:45.850485+00:00, run_id=scheduled__2022-07-24T15:12:45.850485+00:00, run_start_date=2022-07-25 15:12:51.144059+00:00, run_end_date=2022-07-25 15:12:51.180860+00:00, run_duration=0.036801, state=success, external_trigger=False, run_type=scheduled, data_interval_start=2022-07-24 15:12:45.850485+00:00, data_interval_end=2022-07-25 15:12:45.850485+00:00, dag_hash=c9827c605aef0d340979e0977662107b[0m
+[[34m2022-07-25 23:12:51,184[0m] {[34mdag.py:[0m2972} INFO[0m - Setting next_dagrun for a_test to 2022-07-25T15:12:45.850485+00:00, run_after=2022-07-26T15:12:45.850485+00:00[0m
+[[34m2022-07-25 23:16:37,569[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-25 23:21:37,745[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-25 23:26:37,949[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-25 23:27:50,647[0m] {[34mscheduler_job.py:[0m354} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: a_test.test_say_hello manual__2022-07-25T15:27:49.983292+00:00 [scheduled]>[0m
+[[34m2022-07-25 23:27:50,650[0m] {[34mscheduler_job.py:[0m422} INFO[0m - DAG a_test has 0/16 running and queued tasks[0m
+[[34m2022-07-25 23:27:50,651[0m] {[34mscheduler_job.py:[0m504} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: a_test.test_say_hello manual__2022-07-25T15:27:49.983292+00:00 [scheduled]>[0m
+[[34m2022-07-25 23:27:50,663[0m] {[34mscheduler_job.py:[0m546} INFO[0m - Sending TaskInstanceKey(dag_id='a_test', task_id='test_say_hello', run_id='manual__2022-07-25T15:27:49.983292+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default[0m
+[[34m2022-07-25 23:27:50,664[0m] {[34mbase_executor.py:[0m91} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'a_test', 'test_say_hello', 'manual__2022-07-25T15:27:49.983292+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py'][0m
+[[34m2022-07-25 23:27:50,667[0m] {[34msequential_executor.py:[0m59} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'a_test', 'test_say_hello', 'manual__2022-07-25T15:27:49.983292+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py'][0m
+[[34m2022-07-25 23:27:52,182[0m] {[34mdagbag.py:[0m508} INFO[0m - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py[0m
+[[34m2022-07-25 23:27:52,229[0m] {[34mexample_local_kubernetes_executor.py:[0m37} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/Users/pro/Documents/a_env/proj_data/lib/python3.7/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2022-07-25 23:27:52,229[0m] {[34mexample_local_kubernetes_executor.py:[0m38} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2022-07-25 23:27:52,533[0m] {[34mexample_kubernetes_executor.py:[0m40} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2022-07-25 23:27:57,605[0m] {[34mtask_command.py:[0m371} INFO[0m - Running <TaskInstance: a_test.test_say_hello manual__2022-07-25T15:27:49.983292+00:00 [queued]> on host Fu-Changs-MacBook-Pro.local[0m
+[[34m2022-07-25 23:28:18,040[0m] {[34mscheduler_job.py:[0m605} INFO[0m - Executor reports execution of a_test.test_say_hello run_id=manual__2022-07-25T15:27:49.983292+00:00 exited with status success for try_number 1[0m
+[[34m2022-07-25 23:28:18,057[0m] {[34mscheduler_job.py:[0m662} INFO[0m - TaskInstance Finished: dag_id=a_test, task_id=test_say_hello, run_id=manual__2022-07-25T15:27:49.983292+00:00, map_index=-1, run_start_date=2022-07-25 15:28:07.645489+00:00, run_end_date=2022-07-25 15:28:17.798813+00:00, run_duration=10.153324, state=success, executor_state=success, try_number=1, max_tries=1, job_id=2, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2022-07-25 15:27:50.652908+00:00, queued_by_job_id=1, pid=23792[0m
+[[34m2022-07-25 23:28:18,233[0m] {[34mscheduler_job.py:[0m354} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: a_test.test_say_bye manual__2022-07-25T15:27:49.983292+00:00 [scheduled]>[0m
+[[34m2022-07-25 23:28:18,234[0m] {[34mscheduler_job.py:[0m422} INFO[0m - DAG a_test has 0/16 running and queued tasks[0m
+[[34m2022-07-25 23:28:18,235[0m] {[34mscheduler_job.py:[0m504} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: a_test.test_say_bye manual__2022-07-25T15:27:49.983292+00:00 [scheduled]>[0m
+[[34m2022-07-25 23:28:18,238[0m] {[34mscheduler_job.py:[0m546} INFO[0m - Sending TaskInstanceKey(dag_id='a_test', task_id='test_say_bye', run_id='manual__2022-07-25T15:27:49.983292+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default[0m
+[[34m2022-07-25 23:28:18,239[0m] {[34mbase_executor.py:[0m91} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'a_test', 'test_say_bye', 'manual__2022-07-25T15:27:49.983292+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py'][0m
+[[34m2022-07-25 23:28:18,240[0m] {[34msequential_executor.py:[0m59} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'a_test', 'test_say_bye', 'manual__2022-07-25T15:27:49.983292+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py'][0m
+[[34m2022-07-25 23:28:19,419[0m] {[34mdagbag.py:[0m508} INFO[0m - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py[0m
+[[34m2022-07-25 23:28:19,452[0m] {[34mexample_local_kubernetes_executor.py:[0m37} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/Users/pro/Documents/a_env/proj_data/lib/python3.7/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2022-07-25 23:28:19,453[0m] {[34mexample_local_kubernetes_executor.py:[0m38} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2022-07-25 23:28:19,684[0m] {[34mexample_kubernetes_executor.py:[0m40} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2022-07-25 23:28:24,757[0m] {[34mtask_command.py:[0m371} INFO[0m - Running <TaskInstance: a_test.test_say_bye manual__2022-07-25T15:27:49.983292+00:00 [queued]> on host Fu-Changs-MacBook-Pro.local[0m
+[[34m2022-07-25 23:28:45,126[0m] {[34mscheduler_job.py:[0m605} INFO[0m - Executor reports execution of a_test.test_say_bye run_id=manual__2022-07-25T15:27:49.983292+00:00 exited with status success for try_number 1[0m
+[[34m2022-07-25 23:28:45,136[0m] {[34mscheduler_job.py:[0m662} INFO[0m - TaskInstance Finished: dag_id=a_test, task_id=test_say_bye, run_id=manual__2022-07-25T15:27:49.983292+00:00, map_index=-1, run_start_date=2022-07-25 15:28:34.800605+00:00, run_end_date=2022-07-25 15:28:44.944355+00:00, run_duration=10.14375, state=success, executor_state=success, try_number=1, max_tries=1, job_id=3, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2022-07-25 15:28:18.237024+00:00, queued_by_job_id=1, pid=23801[0m
+[[34m2022-07-25 23:28:45,288[0m] {[34mdagrun.py:[0m564} INFO[0m - Marking run <DagRun a_test @ 2022-07-25 15:27:49.983292+00:00: manual__2022-07-25T15:27:49.983292+00:00, externally triggered: True> successful[0m
+[[34m2022-07-25 23:28:45,289[0m] {[34mdagrun.py:[0m624} INFO[0m - DagRun Finished: dag_id=a_test, execution_date=2022-07-25 15:27:49.983292+00:00, run_id=manual__2022-07-25T15:27:49.983292+00:00, run_start_date=2022-07-25 15:27:50.591179+00:00, run_end_date=2022-07-25 15:28:45.289513+00:00, run_duration=54.698334, state=success, external_trigger=True, run_type=manual, data_interval_start=2022-07-24 15:27:49.983292+00:00, data_interval_end=2022-07-25 15:27:49.983292+00:00, dag_hash=d2605ad2ff248909a594b62885f278b3[0m
+[[34m2022-07-25 23:28:45,292[0m] {[34mdag.py:[0m2972} INFO[0m - Setting next_dagrun for a_test to 2022-07-25T15:27:49.983292+00:00, run_after=2022-07-26T15:27:49.983292+00:00[0m
+[[34m2022-07-25 23:31:38,248[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-25 23:36:38,435[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-25 23:41:38,653[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-25 23:46:38,842[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m

@@ -355,3 +355,10 @@ ModuleNotFoundError: No module named 'kubernetes'
 [[34m2022-07-26 04:52:21,865[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
 [[34m2022-07-26 04:57:22,017[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
 [[34m2022-07-26 05:02:22,159[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-26 05:07:22,301[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-26 05:12:22,445[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-26 05:17:22,596[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-26 05:22:22,680[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-26 05:27:22,935[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-26 05:32:23,180[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2022-07-26 05:37:23,324[0m] {[34mscheduler_job.py:[0m1233} INFO[0m - Resetting orphaned tasks for active dag runs[0m

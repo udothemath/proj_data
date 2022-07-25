@@ -1,7 +1,0 @@
-[2022-08-01 18:00:12,696] {processor.py:153} INFO - Started process (PID=99993) to work on /Users/pro/Documents/proj_data/airflow/dags/test.py
-[2022-08-01 18:00:12,697] {processor.py:641} INFO - Processing file /Users/pro/Documents/proj_data/airflow/dags/test.py for tasks to queue
-[2022-08-01 18:00:12,698] {logging_mixin.py:115} INFO - [2022-08-01 18:00:12,698] {dagbag.py:508} INFO - Filling up the DagBag from /Users/pro/Documents/proj_data/airflow/dags/test.py
-[2022-08-01 18:00:12,721] {processor.py:651} INFO - DAG(s) dict_keys(['a_test']) retrieved from /Users/pro/Documents/proj_data/airflow/dags/test.py
-[2022-08-01 18:00:12,788] {logging_mixin.py:115} INFO - [2022-08-01 18:00:12,788] {dag.py:2420} INFO - Sync 1 DAGs
-[2022-08-01 18:00:12,806] {logging_mixin.py:115} INFO - [2022-08-01 18:00:12,805] {dag.py:2972} INFO - Setting next_dagrun for a_test to 2022-07-31T21:36:45.469235+00:00, run_after=2022-08-01T21:36:45.469235+00:00
-[2022-08-01 18:00:12,818] {processor.py:161} INFO - Processing /Users/pro/Documents/proj_data/airflow/dags/test.py took 0.126 seconds

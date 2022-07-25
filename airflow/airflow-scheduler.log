@@ -58,3 +58,170 @@
 2022-07-25 23:36:38,435 INFO - Resetting orphaned tasks for active dag runs
 2022-07-25 23:41:38,653 INFO - Resetting orphaned tasks for active dag runs
 2022-07-25 23:46:38,842 INFO - Resetting orphaned tasks for active dag runs
+2022-07-25 23:51:39,019 INFO - Resetting orphaned tasks for active dag runs
+2022-07-25 23:52:13,854 INFO - 1 tasks up for execution:
+	<TaskInstance: a_test.test_say_hello manual__2022-07-25T15:52:12.586954+00:00 [scheduled]>
+2022-07-25 23:52:13,856 INFO - DAG a_test has 0/16 running and queued tasks
+2022-07-25 23:52:13,857 INFO - Setting the following tasks to queued state:
+	<TaskInstance: a_test.test_say_hello manual__2022-07-25T15:52:12.586954+00:00 [scheduled]>
+2022-07-25 23:52:13,860 INFO - Sending TaskInstanceKey(dag_id='a_test', task_id='test_say_hello', run_id='manual__2022-07-25T15:52:12.586954+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default
+2022-07-25 23:52:13,860 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'a_test', 'test_say_hello', 'manual__2022-07-25T15:52:12.586954+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py']
+2022-07-25 23:52:13,862 INFO - Executing command: ['airflow', 'tasks', 'run', 'a_test', 'test_say_hello', 'manual__2022-07-25T15:52:12.586954+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py']
+2022-07-25 23:52:40,861 INFO - Executor reports execution of a_test.test_say_hello run_id=manual__2022-07-25T15:52:12.586954+00:00 exited with status success for try_number 1
+2022-07-25 23:52:40,871 INFO - TaskInstance Finished: dag_id=a_test, task_id=test_say_hello, run_id=manual__2022-07-25T15:52:12.586954+00:00, map_index=-1, run_start_date=2022-07-25 15:52:30.481164+00:00, run_end_date=2022-07-25 15:52:40.632446+00:00, run_duration=10.151282, state=success, executor_state=success, try_number=1, max_tries=1, job_id=4, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2022-07-25 15:52:13.857980+00:00, queued_by_job_id=1, pid=26902
+2022-07-25 23:52:41,044 INFO - 1 tasks up for execution:
+	<TaskInstance: a_test.test_say_bye manual__2022-07-25T15:52:12.586954+00:00 [scheduled]>
+2022-07-25 23:52:41,045 INFO - DAG a_test has 0/16 running and queued tasks
+2022-07-25 23:52:41,045 INFO - Setting the following tasks to queued state:
+	<TaskInstance: a_test.test_say_bye manual__2022-07-25T15:52:12.586954+00:00 [scheduled]>
+2022-07-25 23:52:41,048 INFO - Sending TaskInstanceKey(dag_id='a_test', task_id='test_say_bye', run_id='manual__2022-07-25T15:52:12.586954+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2022-07-25 23:52:41,048 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'a_test', 'test_say_bye', 'manual__2022-07-25T15:52:12.586954+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py']
+2022-07-25 23:52:41,050 INFO - Executing command: ['airflow', 'tasks', 'run', 'a_test', 'test_say_bye', 'manual__2022-07-25T15:52:12.586954+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py']
+2022-07-25 23:53:08,035 INFO - Executor reports execution of a_test.test_say_bye run_id=manual__2022-07-25T15:52:12.586954+00:00 exited with status success for try_number 1
+2022-07-25 23:53:08,044 INFO - TaskInstance Finished: dag_id=a_test, task_id=test_say_bye, run_id=manual__2022-07-25T15:52:12.586954+00:00, map_index=-1, run_start_date=2022-07-25 15:52:57.669107+00:00, run_end_date=2022-07-25 15:53:07.821243+00:00, run_duration=10.152136, state=success, executor_state=success, try_number=1, max_tries=1, job_id=5, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2022-07-25 15:52:41.046721+00:00, queued_by_job_id=1, pid=26914
+2022-07-25 23:53:08,192 INFO - Marking run <DagRun a_test @ 2022-07-25 15:52:12.586954+00:00: manual__2022-07-25T15:52:12.586954+00:00, externally triggered: True> successful
+2022-07-25 23:53:08,193 INFO - DagRun Finished: dag_id=a_test, execution_date=2022-07-25 15:52:12.586954+00:00, run_id=manual__2022-07-25T15:52:12.586954+00:00, run_start_date=2022-07-25 15:52:13.831843+00:00, run_end_date=2022-07-25 15:53:08.193561+00:00, run_duration=54.361718, state=success, external_trigger=True, run_type=manual, data_interval_start=2022-07-24 15:52:12.586954+00:00, data_interval_end=2022-07-25 15:52:12.586954+00:00, dag_hash=d2605ad2ff248909a594b62885f278b3
+2022-07-25 23:53:08,196 INFO - Setting next_dagrun for a_test to 2022-07-25T15:52:12.586954+00:00, run_after=2022-07-26T15:52:12.586954+00:00
+2022-07-25 23:56:39,219 INFO - Resetting orphaned tasks for active dag runs
+2022-07-26 00:00:39,764 INFO - 1 tasks up for execution:
+	<TaskInstance: a_test.test_say_hello manual__2022-07-25T16:00:01+00:00 [scheduled]>
+2022-07-26 00:00:39,766 INFO - DAG a_test has 0/16 running and queued tasks
+2022-07-26 00:00:39,767 INFO - Setting the following tasks to queued state:
+	<TaskInstance: a_test.test_say_hello manual__2022-07-25T16:00:01+00:00 [scheduled]>
+2022-07-26 00:00:39,770 INFO - Sending TaskInstanceKey(dag_id='a_test', task_id='test_say_hello', run_id='manual__2022-07-25T16:00:01+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default
+2022-07-26 00:00:39,770 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'a_test', 'test_say_hello', 'manual__2022-07-25T16:00:01+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py']
+2022-07-26 00:00:39,772 INFO - Executing command: ['airflow', 'tasks', 'run', 'a_test', 'test_say_hello', 'manual__2022-07-25T16:00:01+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py']
+2022-07-26 00:01:06,873 INFO - Executor reports execution of a_test.test_say_hello run_id=manual__2022-07-25T16:00:01+00:00 exited with status success for try_number 1
+2022-07-26 00:01:06,882 INFO - TaskInstance Finished: dag_id=a_test, task_id=test_say_hello, run_id=manual__2022-07-25T16:00:01+00:00, map_index=-1, run_start_date=2022-07-25 16:00:56.516906+00:00, run_end_date=2022-07-25 16:01:06.678815+00:00, run_duration=10.161909, state=success, executor_state=success, try_number=1, max_tries=1, job_id=6, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2022-07-25 16:00:39.768037+00:00, queued_by_job_id=1, pid=27608
+2022-07-26 00:01:07,063 INFO - 2 tasks up for execution:
+	<TaskInstance: a_test.test_say_hello manual__2022-07-25T16:00:58.056951+00:00 [scheduled]>
+	<TaskInstance: a_test.test_say_bye manual__2022-07-25T16:00:01+00:00 [scheduled]>
+2022-07-26 00:01:07,064 INFO - DAG a_test has 0/16 running and queued tasks
+2022-07-26 00:01:07,064 INFO - DAG a_test has 1/16 running and queued tasks
+2022-07-26 00:01:07,065 INFO - Setting the following tasks to queued state:
+	<TaskInstance: a_test.test_say_hello manual__2022-07-25T16:00:58.056951+00:00 [scheduled]>
+	<TaskInstance: a_test.test_say_bye manual__2022-07-25T16:00:01+00:00 [scheduled]>
+2022-07-26 00:01:07,068 INFO - Sending TaskInstanceKey(dag_id='a_test', task_id='test_say_hello', run_id='manual__2022-07-25T16:00:58.056951+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default
+2022-07-26 00:01:07,068 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'a_test', 'test_say_hello', 'manual__2022-07-25T16:00:58.056951+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py']
+2022-07-26 00:01:07,069 INFO - Sending TaskInstanceKey(dag_id='a_test', task_id='test_say_bye', run_id='manual__2022-07-25T16:00:01+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2022-07-26 00:01:07,069 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'a_test', 'test_say_bye', 'manual__2022-07-25T16:00:01+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py']
+2022-07-26 00:01:07,071 INFO - Executing command: ['airflow', 'tasks', 'run', 'a_test', 'test_say_hello', 'manual__2022-07-25T16:00:58.056951+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py']
+2022-07-26 00:01:34,041 INFO - Executing command: ['airflow', 'tasks', 'run', 'a_test', 'test_say_bye', 'manual__2022-07-25T16:00:01+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py']
+2022-07-26 00:02:01,122 INFO - Executor reports execution of a_test.test_say_hello run_id=manual__2022-07-25T16:00:58.056951+00:00 exited with status success for try_number 1
+2022-07-26 00:02:01,124 INFO - Executor reports execution of a_test.test_say_bye run_id=manual__2022-07-25T16:00:01+00:00 exited with status success for try_number 1
+2022-07-26 00:02:01,139 INFO - TaskInstance Finished: dag_id=a_test, task_id=test_say_bye, run_id=manual__2022-07-25T16:00:01+00:00, map_index=-1, run_start_date=2022-07-25 16:01:50.781240+00:00, run_end_date=2022-07-25 16:02:00.936189+00:00, run_duration=10.154949, state=success, executor_state=success, try_number=1, max_tries=1, job_id=8, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2022-07-25 16:01:07.066432+00:00, queued_by_job_id=1, pid=27682
+2022-07-26 00:02:01,140 INFO - TaskInstance Finished: dag_id=a_test, task_id=test_say_hello, run_id=manual__2022-07-25T16:00:58.056951+00:00, map_index=-1, run_start_date=2022-07-25 16:01:23.684437+00:00, run_end_date=2022-07-25 16:01:33.860610+00:00, run_duration=10.176173, state=success, executor_state=success, try_number=1, max_tries=1, job_id=7, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2022-07-25 16:01:07.066432+00:00, queued_by_job_id=1, pid=27616
+2022-07-26 00:02:01,151 ERROR - DagFileProcessorManager (PID=12388) last sent a heartbeat 54.12 seconds ago! Restarting it
+2022-07-26 00:02:01,159 INFO - Sending Signals.SIGTERM to group 12388. PIDs of all processes in the group: [12388]
+2022-07-26 00:02:01,160 INFO - Sending the signal Signals.SIGTERM to group 12388
+2022-07-26 00:02:01,739 INFO - Process psutil.Process(pid=12388, status='terminated', exitcode=0, started='2022-07-24 23:12:02') (12388) terminated with exit code 0
+2022-07-26 00:02:01,746 INFO - Launched DagFileProcessorManager with pid: 27691
+2022-07-26 00:02:01,760 INFO - Configured default timezone Timezone('UTC')
+2022-07-26 00:02:01,777 INFO - Resetting orphaned tasks for active dag runs
+2022-07-26 00:02:01,780 INFO - Marked 1 SchedulerJob instances as failed
+2022-07-26 00:02:01,997 INFO - Marking run <DagRun a_test @ 2022-07-25 16:00:01+00:00: manual__2022-07-25T16:00:01+00:00, externally triggered: True> successful
+2022-07-26 00:02:01,997 INFO - DagRun Finished: dag_id=a_test, execution_date=2022-07-25 16:00:01+00:00, run_id=manual__2022-07-25T16:00:01+00:00, run_start_date=2022-07-25 16:00:39.741362+00:00, run_end_date=2022-07-25 16:02:01.997947+00:00, run_duration=82.256585, state=success, external_trigger=True, run_type=manual, data_interval_start=2022-07-24 16:00:01+00:00, data_interval_end=2022-07-25 16:00:01+00:00, dag_hash=d2605ad2ff248909a594b62885f278b3
+2022-07-26 00:02:02,001 INFO - Setting next_dagrun for a_test to 2022-07-25T16:00:01+00:00, run_after=2022-07-26T16:00:01+00:00
+2022-07-26 00:02:02,013 INFO - 1 tasks up for execution:
+	<TaskInstance: a_test.test_say_bye manual__2022-07-25T16:00:58.056951+00:00 [scheduled]>
+2022-07-26 00:02:02,013 INFO - DAG a_test has 0/16 running and queued tasks
+2022-07-26 00:02:02,014 INFO - Setting the following tasks to queued state:
+	<TaskInstance: a_test.test_say_bye manual__2022-07-25T16:00:58.056951+00:00 [scheduled]>
+2022-07-26 00:02:02,016 INFO - Sending TaskInstanceKey(dag_id='a_test', task_id='test_say_bye', run_id='manual__2022-07-25T16:00:58.056951+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2022-07-26 00:02:02,017 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'a_test', 'test_say_bye', 'manual__2022-07-25T16:00:58.056951+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py']
+2022-07-26 00:02:02,018 INFO - Executing command: ['airflow', 'tasks', 'run', 'a_test', 'test_say_bye', 'manual__2022-07-25T16:00:58.056951+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py']
+2022-07-26 00:02:29,035 INFO - Executor reports execution of a_test.test_say_bye run_id=manual__2022-07-25T16:00:58.056951+00:00 exited with status success for try_number 1
+2022-07-26 00:02:29,045 INFO - TaskInstance Finished: dag_id=a_test, task_id=test_say_bye, run_id=manual__2022-07-25T16:00:58.056951+00:00, map_index=-1, run_start_date=2022-07-25 16:02:18.697098+00:00, run_end_date=2022-07-25 16:02:28.854638+00:00, run_duration=10.15754, state=success, executor_state=success, try_number=1, max_tries=1, job_id=9, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2022-07-25 16:02:02.015070+00:00, queued_by_job_id=1, pid=27709
+2022-07-26 00:02:29,193 INFO - Marking run <DagRun a_test @ 2022-07-25 16:00:58.056951+00:00: manual__2022-07-25T16:00:58.056951+00:00, externally triggered: True> successful
+2022-07-26 00:02:29,194 INFO - DagRun Finished: dag_id=a_test, execution_date=2022-07-25 16:00:58.056951+00:00, run_id=manual__2022-07-25T16:00:58.056951+00:00, run_start_date=2022-07-25 16:01:07.038383+00:00, run_end_date=2022-07-25 16:02:29.194174+00:00, run_duration=82.155791, state=success, external_trigger=True, run_type=manual, data_interval_start=2022-07-24 16:00:58.056951+00:00, data_interval_end=2022-07-25 16:00:58.056951+00:00, dag_hash=d2605ad2ff248909a594b62885f278b3
+2022-07-26 00:02:29,196 INFO - Setting next_dagrun for a_test to 2022-07-25T16:00:58.056951+00:00, run_after=2022-07-26T16:00:58.056951+00:00
+2022-07-26 00:03:28,191 INFO - 1 tasks up for execution:
+	<TaskInstance: a_test.test_say_hello manual__2022-07-25T16:02:53+00:00 [scheduled]>
+2022-07-26 00:03:28,193 INFO - DAG a_test has 0/16 running and queued tasks
+2022-07-26 00:03:28,193 INFO - Setting the following tasks to queued state:
+	<TaskInstance: a_test.test_say_hello manual__2022-07-25T16:02:53+00:00 [scheduled]>
+2022-07-26 00:03:28,197 INFO - Sending TaskInstanceKey(dag_id='a_test', task_id='test_say_hello', run_id='manual__2022-07-25T16:02:53+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default
+2022-07-26 00:03:28,198 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'a_test', 'test_say_hello', 'manual__2022-07-25T16:02:53+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py']
+2022-07-26 00:03:28,199 INFO - Executing command: ['airflow', 'tasks', 'run', 'a_test', 'test_say_hello', 'manual__2022-07-25T16:02:53+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py']
+2022-07-26 00:03:55,369 INFO - Executor reports execution of a_test.test_say_hello run_id=manual__2022-07-25T16:02:53+00:00 exited with status success for try_number 1
+2022-07-26 00:03:55,378 INFO - TaskInstance Finished: dag_id=a_test, task_id=test_say_hello, run_id=manual__2022-07-25T16:02:53+00:00, map_index=-1, run_start_date=2022-07-25 16:03:45.018125+00:00, run_end_date=2022-07-25 16:03:55.176607+00:00, run_duration=10.158482, state=success, executor_state=success, try_number=1, max_tries=1, job_id=10, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2022-07-25 16:03:28.194910+00:00, queued_by_job_id=1, pid=27837
+2022-07-26 00:03:55,547 INFO - 1 tasks up for execution:
+	<TaskInstance: a_test.test_say_bye manual__2022-07-25T16:02:53+00:00 [scheduled]>
+2022-07-26 00:03:55,547 INFO - DAG a_test has 0/16 running and queued tasks
+2022-07-26 00:03:55,548 INFO - Setting the following tasks to queued state:
+	<TaskInstance: a_test.test_say_bye manual__2022-07-25T16:02:53+00:00 [scheduled]>
+2022-07-26 00:03:55,550 INFO - Sending TaskInstanceKey(dag_id='a_test', task_id='test_say_bye', run_id='manual__2022-07-25T16:02:53+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2022-07-26 00:03:55,551 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'a_test', 'test_say_bye', 'manual__2022-07-25T16:02:53+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py']
+2022-07-26 00:03:55,552 INFO - Executing command: ['airflow', 'tasks', 'run', 'a_test', 'test_say_bye', 'manual__2022-07-25T16:02:53+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py']
+2022-07-26 00:04:22,161 INFO - Executor reports execution of a_test.test_say_bye run_id=manual__2022-07-25T16:02:53+00:00 exited with status success for try_number 1
+2022-07-26 00:04:22,172 INFO - TaskInstance Finished: dag_id=a_test, task_id=test_say_bye, run_id=manual__2022-07-25T16:02:53+00:00, map_index=-1, run_start_date=2022-07-25 16:04:11.816277+00:00, run_end_date=2022-07-25 16:04:21.967684+00:00, run_duration=10.151407, state=success, executor_state=success, try_number=1, max_tries=1, job_id=11, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2022-07-25 16:03:55.549349+00:00, queued_by_job_id=1, pid=27846
+2022-07-26 00:04:22,328 INFO - Marking run <DagRun a_test @ 2022-07-25 16:02:53+00:00: manual__2022-07-25T16:02:53+00:00, externally triggered: True> successful
+2022-07-26 00:04:22,329 INFO - DagRun Finished: dag_id=a_test, execution_date=2022-07-25 16:02:53+00:00, run_id=manual__2022-07-25T16:02:53+00:00, run_start_date=2022-07-25 16:03:28.170645+00:00, run_end_date=2022-07-25 16:04:22.329246+00:00, run_duration=54.158601, state=success, external_trigger=True, run_type=manual, data_interval_start=2022-07-24 16:02:53+00:00, data_interval_end=2022-07-25 16:02:53+00:00, dag_hash=d2605ad2ff248909a594b62885f278b3
+2022-07-26 00:04:22,331 INFO - Setting next_dagrun for a_test to 2022-07-25T16:02:53+00:00, run_after=2022-07-26T16:02:53+00:00
+2022-07-26 00:07:11,364 INFO - Resetting orphaned tasks for active dag runs
+2022-07-26 00:59:22,404 INFO - Resetting orphaned tasks for active dag runs
+2022-07-26 01:59:34,468 INFO - Resetting orphaned tasks for active dag runs
+2022-07-26 04:02:20,285 INFO - Resetting orphaned tasks for active dag runs
+2022-07-26 04:07:20,428 INFO - Resetting orphaned tasks for active dag runs
+2022-07-26 04:12:20,743 INFO - Resetting orphaned tasks for active dag runs
+2022-07-26 04:17:20,888 INFO - Resetting orphaned tasks for active dag runs
+2022-07-26 04:22:21,032 INFO - Resetting orphaned tasks for active dag runs
+2022-07-26 04:27:21,200 INFO - Resetting orphaned tasks for active dag runs
+2022-07-26 04:32:21,300 INFO - Resetting orphaned tasks for active dag runs
+2022-07-26 04:34:42,463 INFO - 2 tasks up for execution:
+	<TaskInstance: a_test.print_date manual__2022-07-25T20:34:41.637079+00:00 [scheduled]>
+	<TaskInstance: a_test.test_say_hello manual__2022-07-25T20:34:41.637079+00:00 [scheduled]>
+2022-07-26 04:34:42,464 INFO - DAG a_test has 0/16 running and queued tasks
+2022-07-26 04:34:42,465 INFO - DAG a_test has 1/16 running and queued tasks
+2022-07-26 04:34:42,465 INFO - Setting the following tasks to queued state:
+	<TaskInstance: a_test.print_date manual__2022-07-25T20:34:41.637079+00:00 [scheduled]>
+	<TaskInstance: a_test.test_say_hello manual__2022-07-25T20:34:41.637079+00:00 [scheduled]>
+2022-07-26 04:34:42,468 INFO - Sending TaskInstanceKey(dag_id='a_test', task_id='print_date', run_id='manual__2022-07-25T20:34:41.637079+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default
+2022-07-26 04:34:42,469 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'a_test', 'print_date', 'manual__2022-07-25T20:34:41.637079+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py']
+2022-07-26 04:34:42,469 INFO - Sending TaskInstanceKey(dag_id='a_test', task_id='test_say_hello', run_id='manual__2022-07-25T20:34:41.637079+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default
+2022-07-26 04:34:42,470 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'a_test', 'test_say_hello', 'manual__2022-07-25T20:34:41.637079+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py']
+2022-07-26 04:34:42,472 INFO - Executing command: ['airflow', 'tasks', 'run', 'a_test', 'print_date', 'manual__2022-07-25T20:34:41.637079+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py']
+2022-07-26 04:35:09,630 INFO - Executing command: ['airflow', 'tasks', 'run', 'a_test', 'test_say_hello', 'manual__2022-07-25T20:34:41.637079+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py']
+2022-07-26 04:35:36,681 INFO - Executor reports execution of a_test.print_date run_id=manual__2022-07-25T20:34:41.637079+00:00 exited with status success for try_number 1
+2022-07-26 04:35:36,683 INFO - Executor reports execution of a_test.test_say_hello run_id=manual__2022-07-25T20:34:41.637079+00:00 exited with status success for try_number 1
+2022-07-26 04:35:36,693 INFO - TaskInstance Finished: dag_id=a_test, task_id=print_date, run_id=manual__2022-07-25T20:34:41.637079+00:00, map_index=-1, run_start_date=2022-07-25 20:34:59.198130+00:00, run_end_date=2022-07-25 20:35:09.397227+00:00, run_duration=10.199097, state=success, executor_state=success, try_number=1, max_tries=1, job_id=12, pool=default_pool, queue=default, priority_weight=2, operator=BashOperator, queued_dttm=2022-07-25 20:34:42.466541+00:00, queued_by_job_id=1, pid=32943
+2022-07-26 04:35:36,694 INFO - TaskInstance Finished: dag_id=a_test, task_id=test_say_hello, run_id=manual__2022-07-25T20:34:41.637079+00:00, map_index=-1, run_start_date=2022-07-25 20:35:26.340540+00:00, run_end_date=2022-07-25 20:35:36.505597+00:00, run_duration=10.165057, state=success, executor_state=success, try_number=1, max_tries=1, job_id=13, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2022-07-25 20:34:42.466541+00:00, queued_by_job_id=1, pid=32948
+2022-07-26 04:35:36,705 ERROR - DagFileProcessorManager (PID=27691) last sent a heartbeat 54.29 seconds ago! Restarting it
+2022-07-26 04:35:36,715 INFO - Sending Signals.SIGTERM to group 27691. PIDs of all processes in the group: [27691]
+2022-07-26 04:35:36,717 INFO - Sending the signal Signals.SIGTERM to group 27691
+2022-07-26 04:35:37,096 INFO - Process psutil.Process(pid=27691, status='terminated', exitcode=0, started='00:02:01') (27691) terminated with exit code 0
+2022-07-26 04:35:37,102 INFO - Launched DagFileProcessorManager with pid: 32949
+2022-07-26 04:35:37,115 INFO - Configured default timezone Timezone('UTC')
+2022-07-26 04:35:37,360 INFO - 2 tasks up for execution:
+	<TaskInstance: a_test.sleep manual__2022-07-25T20:34:41.637079+00:00 [scheduled]>
+	<TaskInstance: a_test.test_say_bye manual__2022-07-25T20:34:41.637079+00:00 [scheduled]>
+2022-07-26 04:35:37,361 INFO - DAG a_test has 0/16 running and queued tasks
+2022-07-26 04:35:37,361 INFO - DAG a_test has 1/16 running and queued tasks
+2022-07-26 04:35:37,362 INFO - Setting the following tasks to queued state:
+	<TaskInstance: a_test.sleep manual__2022-07-25T20:34:41.637079+00:00 [scheduled]>
+	<TaskInstance: a_test.test_say_bye manual__2022-07-25T20:34:41.637079+00:00 [scheduled]>
+2022-07-26 04:35:37,364 INFO - Sending TaskInstanceKey(dag_id='a_test', task_id='sleep', run_id='manual__2022-07-25T20:34:41.637079+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2022-07-26 04:35:37,365 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'a_test', 'sleep', 'manual__2022-07-25T20:34:41.637079+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py']
+2022-07-26 04:35:37,366 INFO - Sending TaskInstanceKey(dag_id='a_test', task_id='test_say_bye', run_id='manual__2022-07-25T20:34:41.637079+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default
+2022-07-26 04:35:37,366 INFO - Adding to queue: ['airflow', 'tasks', 'run', 'a_test', 'test_say_bye', 'manual__2022-07-25T20:34:41.637079+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py']
+2022-07-26 04:35:37,368 INFO - Executing command: ['airflow', 'tasks', 'run', 'a_test', 'sleep', 'manual__2022-07-25T20:34:41.637079+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py']
+2022-07-26 04:36:14,242 INFO - Executing command: ['airflow', 'tasks', 'run', 'a_test', 'test_say_bye', 'manual__2022-07-25T20:34:41.637079+00:00', '--local', '--subdir', 'DAGS_FOLDER/test.py']
+2022-07-26 04:36:41,246 INFO - Executor reports execution of a_test.sleep run_id=manual__2022-07-25T20:34:41.637079+00:00 exited with status success for try_number 1
+2022-07-26 04:36:41,247 INFO - Executor reports execution of a_test.test_say_bye run_id=manual__2022-07-25T20:34:41.637079+00:00 exited with status success for try_number 1
+2022-07-26 04:36:41,255 INFO - TaskInstance Finished: dag_id=a_test, task_id=sleep, run_id=manual__2022-07-25T20:34:41.637079+00:00, map_index=-1, run_start_date=2022-07-25 20:35:53.955741+00:00, run_end_date=2022-07-25 20:36:09.171016+00:00, run_duration=15.215275, state=success, executor_state=success, try_number=1, max_tries=3, job_id=14, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2022-07-25 20:35:37.362955+00:00, queued_by_job_id=1, pid=32954
+2022-07-26 04:36:41,256 INFO - TaskInstance Finished: dag_id=a_test, task_id=test_say_bye, run_id=manual__2022-07-25T20:34:41.637079+00:00, map_index=-1, run_start_date=2022-07-25 20:36:30.870856+00:00, run_end_date=2022-07-25 20:36:41.024363+00:00, run_duration=10.153507, state=success, executor_state=success, try_number=1, max_tries=1, job_id=15, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2022-07-25 20:35:37.362955+00:00, queued_by_job_id=1, pid=33038
+2022-07-26 04:36:41,267 ERROR - DagFileProcessorManager (PID=32949) last sent a heartbeat 63.94 seconds ago! Restarting it
+2022-07-26 04:36:41,275 INFO - Sending Signals.SIGTERM to group 32949. PIDs of all processes in the group: [32949]
+2022-07-26 04:36:41,275 INFO - Sending the signal Signals.SIGTERM to group 32949
+2022-07-26 04:36:41,572 INFO - Process psutil.Process(pid=32949, status='terminated', exitcode=0, started='04:35:37') (32949) terminated with exit code 0
+2022-07-26 04:36:41,577 INFO - Launched DagFileProcessorManager with pid: 33039
+2022-07-26 04:36:41,585 INFO - Configured default timezone Timezone('UTC')
+2022-07-26 04:36:41,789 INFO - Marking run <DagRun a_test @ 2022-07-25 20:34:41.637079+00:00: manual__2022-07-25T20:34:41.637079+00:00, externally triggered: True> successful
+2022-07-26 04:36:41,790 INFO - DagRun Finished: dag_id=a_test, execution_date=2022-07-25 20:34:41.637079+00:00, run_id=manual__2022-07-25T20:34:41.637079+00:00, run_start_date=2022-07-25 20:34:42.438960+00:00, run_end_date=2022-07-25 20:36:41.790469+00:00, run_duration=119.351509, state=success, external_trigger=True, run_type=manual, data_interval_start=2022-07-24 20:34:41.637079+00:00, data_interval_end=2022-07-25 20:34:41.637079+00:00, dag_hash=1b9c2d33dcbd23233be2491803b3e455
+2022-07-26 04:36:41,793 INFO - Setting next_dagrun for a_test to 2022-07-25T20:34:41.637079+00:00, run_after=2022-07-26T20:34:41.637079+00:00
+2022-07-26 04:37:21,473 INFO - Resetting orphaned tasks for active dag runs
+2022-07-26 04:42:21,576 INFO - Resetting orphaned tasks for active dag runs
+2022-07-26 04:47:21,726 INFO - Resetting orphaned tasks for active dag runs
+2022-07-26 04:52:21,865 INFO - Resetting orphaned tasks for active dag runs
+2022-07-26 04:57:22,017 INFO - Resetting orphaned tasks for active dag runs
+2022-07-26 05:02:22,159 INFO - Resetting orphaned tasks for active dag runs

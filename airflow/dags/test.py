@@ -25,23 +25,27 @@ Documentation that goes along with the Airflow tutorial located
 # [START import_module]
 from datetime import datetime, timedelta
 from textwrap import dedent
+from typing import Dict
 
+import pendulum
 # The DAG object; we'll need this to instantiate a DAG
 from airflow import DAG
 from airflow.models import Variable
-from airflow.operators.python import PythonOperator
 # Operators; we need this to operate!
-# from airflow.operators.bash import BashOperator
-from airflow.utils.dates import days_ago
+from airflow.operators.bash import BashOperator
+from airflow.operators.dummy import DummyOperator
+from airflow.operators.python import PythonOperator
 
 # [END import_module]
 
 
-def say_hello():
+def say_hello(**context: Dict[str, str]):
     ur_greeting = Variable.get("the_greeting")
     print("Some info")
     print(ur_greeting)
-    print(f"Hello airflow {ur_greeting}")
+    print(f'Hello airflow {ur_greeting}')
+    the_mode = context["dag_run"].conf.get("the_mode")
+    print(f"The mode: {the_mode}")
 
 
 def say_goodbye():
@@ -78,7 +82,7 @@ with DAG(
     # [END default_args]
     description='A simple tutorial DAG',
     schedule_interval=timedelta(days=1),
-    start_date=days_ago(2),
+    start_date=pendulum.today('UTC').add(days=-2),
     catchup=False,
     tags=['first_test '],
 ) as dag:
@@ -86,17 +90,18 @@ with DAG(
 
     # # t1, t2 and t3 are examples of tasks created by instantiating operators
     # # [START basic_task]
-    # t1 = BashOperator(
-    #     task_id='print_date',
-    #     bash_command='date',
-    # )
+    t1 = BashOperator(
+        task_id='print_date',
+        bash_command='date',
+    )
 
-    # t2 = BashOperator(
-    #     task_id='sleep',
-    #     depends_on_past=False,
-    #     bash_command='sleep 5',
-    #     retries=3,
-    # )
+    t2 = BashOperator(
+        task_id='sleep',
+        depends_on_past=False,
+        bash_command='sleep 5',
+        retries=3,
+    )
+    t1 >> t2
     # # [END basic_task]
 
     # # [START documentation]

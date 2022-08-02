@@ -1,0 +1,13 @@
+{
+    "characters": [
+      {
+        "type": "model_a",
+        "name": "Hello"
+      },
+      {
+        "type": "model_b",
+        "name": "Bye Bye"
+      }
+
+    ]
+  }

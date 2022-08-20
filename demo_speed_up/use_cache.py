@@ -2,17 +2,17 @@ import os
 import time
 from functools import lru_cache
 
-from memory_profiler import profile
+from memory_profiler import memory_usage, profile
 
-fp = open('memory_profile.log', 'w+')
+log_file = open('profile.log', 'w+')
 
 
-@profile(stream=fp)
-def run_with_profile():
-    x = [x for x in range(0, 1000)]
-    y = [y*100 for y in range(0, 1500)]
-    del x
-    return y
+@profile(stream=log_file)
+def my_func():
+    a = [1] * (10 ** 6)
+    b = [2] * (2 * 10 ** 7)
+    del b
+    return a
 
 
 @lru_cache(maxsize=16)
@@ -38,7 +38,7 @@ if __name__ == '__main__':
     start = time.perf_counter()
     # main(func=fib_cache, n_size=100)
 
-    run_with_profile()
+    my_func()
 
     elapsed = time.perf_counter() - start
     print(f"Elapsed: {elapsed:.2f} second.")

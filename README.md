@@ -6,3 +6,5 @@
 - demo_plugin
 - demo_yaml_setting
 - logs (for dbt)
+
+add few words in template

@@ -1,8 +1,9 @@
+import os
 import time
 from functools import lru_cache
 
 
-@lru_cache()
+@lru_cache(maxsize=16)
 def fib_cache(n):
     if n <= 1:
         return n
@@ -22,7 +23,7 @@ def main(func, n_size=30):
 
 
 if __name__ == '__main__':
-    start = time.perf_counter()
-    main(func=fib_cache, n_size=100)
-    elapsed = time.perf_counter() - start
-    print(f"Elapsed: {elapsed:.2f} second.")
+    # start = time.perf_counter()
+    # main(func=fib_cache, n_size=100)
+    # elapsed = time.perf_counter() - start
+    # print(f"Elapsed: {elapsed:.2f} second.")

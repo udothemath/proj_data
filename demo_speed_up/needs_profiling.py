@@ -77,6 +77,12 @@ def main():
     stats.sort_stats(pstats.SortKey.TIME)
     stats.print_stats()
     stats.dump_stats(filename='needs_profiling.prof')
+    generate_png()
+
+
+def generate_png():
+    bash_script = 'python3 -m gprof2dot -f pstats needs_profiling.prof | dot -T png -o needs_profiling.png'
+    os.system(bash_script)
 
 
 def profile_func(func):

@@ -5,8 +5,5 @@
 - demo_func
 - demo_plugin
 - demo_yaml_setting
+- demo_speed_up
 - logs (for dbt)
-
-add few words in template
-
-do do save it for later

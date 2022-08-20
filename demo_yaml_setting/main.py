@@ -3,6 +3,7 @@ from jinja2 import Template
 
 from demo_jinja import quick_demo_jinja1, quick_demo_jinja2
 from demo_yaml import quick_demo_yaml1, quick_demo_yaml2, quick_demo_yaml3
+from templates.demo_sql_pool import sql_v7, sql_v8
 
 
 def yaml_setting():
@@ -32,21 +33,20 @@ if __name__ == "__main__":
 
     file_sql = 'demo_sql_v1.sql'
     result4 = quick_demo_yaml3(vars=yaml_vars, filename=file_sql)
-    print(result4)
+    # print(result4)
 
     file_sql = 'demo_sql_v2.sql'
     result5 = quick_demo_yaml3(vars=yaml_vars, filename=file_sql)
-    print(result5)
+    # print(result5)
 
     file_sql = 'demo_sql_v3.sql'
     result6 = quick_demo_yaml3(vars=yaml_vars, filename=file_sql)
-    print(result6)
+    # print(result6)
 
-    from templates.demo_sql_pool import sql_v7, sql_v8
     result = Template(sql_v7).render(yaml_vars)
-    print(result)
+    # print(result)
 
     result = Template(sql_v8).render(yaml_vars)
-    print(result)
+    # print(result)
 
     print(" ==== End ==== ")

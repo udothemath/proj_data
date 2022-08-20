@@ -2,6 +2,18 @@ import os
 import time
 from functools import lru_cache
 
+from memory_profiler import profile
+
+fp = open('memory_profile.log', 'w+')
+
+
+@profile(stream=fp)
+def run_with_profile():
+    x = [x for x in range(0, 1000)]
+    y = [y*100 for y in range(0, 1500)]
+    del x
+    return y
+
 
 @lru_cache(maxsize=16)
 def fib_cache(n):
@@ -23,7 +35,10 @@ def main(func, n_size=30):
 
 
 if __name__ == '__main__':
-    # start = time.perf_counter()
+    start = time.perf_counter()
     # main(func=fib_cache, n_size=100)
-    # elapsed = time.perf_counter() - start
-    # print(f"Elapsed: {elapsed:.2f} second.")
+
+    run_with_profile()
+
+    elapsed = time.perf_counter() - start
+    print(f"Elapsed: {elapsed:.2f} second.")

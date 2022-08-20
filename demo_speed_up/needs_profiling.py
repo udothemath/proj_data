@@ -75,9 +75,9 @@ def main():
     pr.disable()
     stats = pstats.Stats(pr)
     stats.sort_stats(pstats.SortKey.TIME)
-    stats.print_stats()
-    stats.dump_stats(filename='needs_profiling.prof')
-    generate_png()
+    stats.print_stats(10)
+    # stats.dump_stats(filename='needs_profiling.prof')
+    # generate_png()
 
 
 def generate_png():

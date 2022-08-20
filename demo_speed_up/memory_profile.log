@@ -1,0 +1,12 @@
+Filename: /Users/pro/Documents/proj_data/demo_speed_up/use_cache.py
+
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+    10     13.1 MiB     13.1 MiB           1   @profile(stream=fp)
+    11                                         def run_with_profile():
+    12     13.1 MiB      0.0 MiB        1003       x = [x for x in range(0, 1000)]
+    13     13.1 MiB      0.0 MiB        1503       y = [y*100 for y in range(0, 1500)]
+    14     13.1 MiB      0.0 MiB           1       del x
+    15     13.1 MiB      0.0 MiB           1       return y
+
+

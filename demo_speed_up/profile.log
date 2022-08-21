@@ -1,0 +1,24 @@
+Filename: /Users/pro/Documents/proj_data/demo_speed_up/use_cache.py
+
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+    45     13.1 MiB     13.1 MiB           1   @get_time
+    46                                         @profile(stream=log_file)
+    47                                         def main(func, n_size=30):
+    48     13.1 MiB      0.0 MiB          22       for i in range(n_size+1):
+    49     13.1 MiB      0.0 MiB          21           print(i, func(i))
+    50     13.1 MiB      0.0 MiB           1       print("done")
+
+
+Filename: /Users/pro/Documents/proj_data/demo_speed_up/use_cache.py
+
+Line #    Mem usage    Increment  Occurrences   Line Contents
+=============================================================
+    45     13.1 MiB     13.1 MiB           1   @get_time
+    46                                         @profile(stream=log_file)
+    47                                         def main(func, n_size=30):
+    48     13.1 MiB      0.0 MiB         202       for i in range(n_size+1):
+    49     13.1 MiB      0.0 MiB         201           print(i, func(i))
+    50     13.1 MiB      0.0 MiB           1       print("done")
+
+

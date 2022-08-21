@@ -1,11 +1,14 @@
 from __future__ import annotations
 
+import math
 import os.path
 import time
 from multiprocessing import Pool, active_children, current_process
 
 import numpy as np
 import scipy.io.wavfile
+
+SHOW_PID_INFO = False
 
 
 def gen_fake_data(filenames):
@@ -75,21 +78,27 @@ def run_normal(items, do_work):
 
 
 # initialize the worker process
-def init_worker():
+def init_worker(show_pid=SHOW_PID_INFO):
     # get the pid for the current worker process
     pid = os.getpid()
-    print(f'Worker PID: {pid}', flush=True)
+    if show_pid:
+        print(f'Worker PID: {pid}', flush=True)
+
+
+def show_pid_info():
+    print("==== Main pid ====")
+    print(current_process().name, current_process().pid)
+    print("==== Child pid ====")
+    print([child.pid for child in active_children()])
 
 
 def run_with_mp_map(items, do_work, processes=None, chunksize=None):
     print(
-        f"running using multiprocessing with process: {processes}, chunksize: {chunksize}")
+        f"running using multiprocessing with process: {processes}, chunksize: {chunksize:,}")
     start_t = time.perf_counter()
     with Pool(initializer=init_worker, processes=processes) as pool:
-        print("==== Main pid ====")
-        print(current_process().name, current_process().pid)
-        print("==== Child pid ====")
-        print([child.pid for child in active_children()])
+        if SHOW_PID_INFO:
+            show_pid_info()
         results = pool.imap(do_work, items, chunksize=chunksize)
     end_t = time.perf_counter()
     wall_duration = end_t - start_t
@@ -127,10 +136,13 @@ def compare_mp_map_to_normal():
 
 
 def compare_multiprocess_cores():
-    items = list(range(10000000))
+    items = list(range(100000000))
     do_work = fib
     for n_processes in [1, 2, 4]:
-        run_with_mp_map(items, do_work, processes=n_processes, chunksize=1024)
+        items_size = len(items)
+        each_size = math.floor(items_size/n_processes)
+        run_with_mp_map(items, do_work, processes=n_processes,
+                        chunksize=each_size)
 
 
 def main():

@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import os.path
 import time
-from multiprocessing import Pool
+from multiprocessing import Pool, active_children, current_process
 
 import numpy as np
 import scipy.io.wavfile
@@ -65,7 +65,7 @@ def etl_demo():
 
 
 def run_normal(items, do_work):
-    print("running normally on 1 cpu")
+    print("running normally on 1 core")
     start_t = time.perf_counter()
     results = list(map(do_work, items))
     end_t = time.perf_counter()
@@ -74,10 +74,22 @@ def run_normal(items, do_work):
     return results
 
 
+# initialize the worker process
+def init_worker():
+    # get the pid for the current worker process
+    pid = os.getpid()
+    print(f'Worker PID: {pid}', flush=True)
+
+
 def run_with_mp_map(items, do_work, processes=None, chunksize=None):
-    print(f"running using multiprocessing with {processes}, {chunksize}")
+    print(
+        f"running using multiprocessing with process: {processes}, chunksize: {chunksize}")
     start_t = time.perf_counter()
-    with Pool(processes=processes) as pool:
+    with Pool(initializer=init_worker, processes=processes) as pool:
+        print("==== Main pid ====")
+        print(current_process().name, current_process().pid)
+        print("==== Child pid ====")
+        print([child.pid for child in active_children()])
         results = pool.imap(do_work, items, chunksize=chunksize)
     end_t = time.perf_counter()
     wall_duration = end_t - start_t
@@ -108,15 +120,23 @@ def n_fibs(n):
 def compare_mp_map_to_normal():
     items = list(range(10000))
     do_work = fib
-    run_with_mp_map(items, do_work)
+    run_with_mp_map(items, do_work, processes=2, chunksize=32)
 
     print()
     run_normal(items, do_work)
 
 
+def compare_multiprocess_cores():
+    items = list(range(10000000))
+    do_work = fib
+    for n_processes in [1, 2, 4]:
+        run_with_mp_map(items, do_work, processes=n_processes, chunksize=1024)
+
+
 def main():
-    etl_demo()
+    # etl_demo()
     # compare_mp_map_to_normal()
+    compare_multiprocess_cores()
 
 
 if __name__ == '__main__':

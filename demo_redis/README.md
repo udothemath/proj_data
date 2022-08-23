@@ -1,6 +1,9 @@
 # Redis
 
-## [Install Redis on macOS](https://redis.io/docs/getting-started/installation/install-redis-on-mac-os/)
+## Tutorial
+
+- [Install Redis on macOS](https://redis.io/docs/getting-started/installation/install-redis-on-mac-os/)
+- [Get started](https://redis.io/docs/getting-started/)
 
 ## Package Installation
 

@@ -1,4 +1,5 @@
 import logging
+import time
 from datetime import datetime
 from functools import wraps
 
@@ -27,7 +28,7 @@ def create_logger(log_filename: str =f'exc_logger_{datetime.now():%Y_%m_%d}.log'
 # # created in a given path 
 # print(logger) 
 
-def dec_exception(logger: logging):
+def dec_exception(logger=logging.getLogger(__name__) ):
     def decorator(func):
         @wraps(func)
         def wrapper(*args, **kwargs):
@@ -41,6 +42,24 @@ def dec_exception(logger: logging):
         return wrapper
     return decorator 
 
+
+def dec_hello(logger=logging.getLogger(__name__)):
+    def decorator(func):
+        @wraps(func)
+        def wrapper(*args, **kwargs):
+            try:
+                start = time.perf_counter()
+                a = func(*args, **kwargs)
+                elapsed_time = time.perf_counter() - start
+                logger.info({'Elapsed time:': f'{elapsed_time:.2f}' })
+                return a
+            except:
+                issue = "BAD in "+func.__name__+"\n"
+                issue = issue+"=============\n"
+                logger.exception(issue)
+                raise
+        return wrapper
+    return decorator 
 
 # @exception(logger) 
 # def divideByZero(): 

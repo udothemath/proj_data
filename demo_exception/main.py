@@ -1,7 +1,8 @@
-from venv import create
+# from venv import create
 
-from logging_dec import create_logger, dec_exception
+from logging_dec import create_logger, dec_exception, dec_hello
 
+my_logger = create_logger()
 
 class BaseValidationError(ValueError):
     pass
@@ -39,21 +40,24 @@ def check_exception(input_value:int):
     else:        
         raise TooBadError(f"You have input a very small value {input_value}") 
 
-@dec_exception(create_logger())
+
+
+@dec_exception(my_logger)
+@dec_hello(my_logger)
 def run_exception(input_value:int):
     check_exception(input_value)
 
+@dec_exception(my_logger)
 def main():
     print("Hello")
     try:
         validate("abcqqq")
     except BaseValidationError as err:
-        print(err)
-    # print("Another approach...")
-    # validate("aa")
+        raise
+
 
 if __name__=="__main__":
     print("--- Execute ---")
     # main()
-    run_exception(input_value=-9)
-    print("Bye bye...")
+    run_exception(input_value=99999)
+    print("--- Done ---")

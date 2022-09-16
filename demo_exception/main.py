@@ -1,6 +1,6 @@
 from venv import create
 
-from logging_dec import create_logger, exception
+from logging_dec import create_logger, dec_exception
 
 
 class BaseValidationError(ValueError):
@@ -39,7 +39,7 @@ def check_exception(input_value:int):
     else:        
         raise TooBadError(f"You have input a very small value {input_value}") 
 
-@exception(create_logger())
+@dec_exception(create_logger())
 def run_exception(input_value:int):
     check_exception(input_value)
 

@@ -4,10 +4,9 @@ from functools import wraps
 
 # Example from: https://www.geeksforgeeks.org/create-an-exception-logging-decorator-in-python/
 
-def create_logger(): 
+def create_logger(log_filename: str =f'exc_logger_{datetime.now():%Y_%m_%d}.log'): 
     
     # create a logger object 
-    log_filename=f'exc_logger_{datetime.now():%Y_%m_%d}.log'
     logger = logging.getLogger(log_filename) 
     logger.setLevel(logging.INFO) 
     
@@ -28,7 +27,7 @@ def create_logger():
 # # created in a given path 
 # print(logger) 
 
-def exception(logger):
+def dec_exception(logger: logging):
     def decorator(func):
         @wraps(func)
         def wrapper(*args, **kwargs):

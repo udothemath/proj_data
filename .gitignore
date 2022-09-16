@@ -5,3 +5,4 @@ templates/__pycache__/
 airflow/logs/*
 airflow/dags/*
 airflow/*
+demo_exception/exc_*

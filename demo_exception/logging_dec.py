@@ -28,7 +28,6 @@ def dec_profile(logger=logging.getLogger(__name__)):
             result = func(*args, **kwargs)
             elapsed_time = elapsed_since(start)
             mem_after = get_process_memory()
-            # str(round(bytes / 1e6, 2)
             log_dict = {
                 "Elapsed time": f"{elapsed_time}",
                 "Memory usage": f"{str(round((mem_after - mem_before) / 1e6, 2))} MB",
@@ -36,10 +35,6 @@ def dec_profile(logger=logging.getLogger(__name__)):
                 "Memory after": f"{str(round((mem_after) / 1e6, 2))} MB",
             }
             logger.info(log_dict)
-            # logger.info("{}: memory before: {:,}, after: {:,}, consumed: {:,}; exec time: {}".format(
-            #     func.__name__,
-            #     mem_before, mem_after, mem_after - mem_before,
-            #     elapsed_time))
             return result
         return wrapper
     return profile

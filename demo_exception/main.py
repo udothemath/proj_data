@@ -38,11 +38,11 @@ def run_exception(input_value: int):
 def main():
     my_logger.info("U are visiting main()")
     time.sleep(3)
-    # try:
-    #     validate("abcqqq")
-    # except BaseValidationError as err:
-    #     my_logger.info(f"here: {str(err)}")
-    #     raise
+    try:
+        validate("1234")
+    except BaseValidationError as err:
+        my_logger.info(f"here: {str(err)}")
+        raise
 
 
 if __name__ == "__main__":

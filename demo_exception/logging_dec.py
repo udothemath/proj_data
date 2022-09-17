@@ -43,7 +43,7 @@ def dec_exception(logger=logging.getLogger(__name__) ):
     return decorator 
 
 
-def dec_hello(logger=logging.getLogger(__name__)):
+def dec_calc_time(logger=logging.getLogger(__name__)):
     def decorator(func):
         @wraps(func)
         def wrapper(*args, **kwargs):
@@ -51,10 +51,12 @@ def dec_hello(logger=logging.getLogger(__name__)):
                 start = time.perf_counter()
                 a = func(*args, **kwargs)
                 elapsed_time = time.perf_counter() - start
-                logger.info({'Elapsed time:': f'{elapsed_time:.2f}' })
+                log_info={  'Func name': func.__qualname__, 
+                            'Elapsed time': f'{elapsed_time:.2f}' }
+                logger.info(log_info)
                 return a
             except:
-                issue = "BAD in "+func.__name__+"\n"
+                issue = f'Func name: {func.__qualname__} \n'
                 issue = issue+"=============\n"
                 logger.exception(issue)
                 raise

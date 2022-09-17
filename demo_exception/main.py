@@ -1,6 +1,7 @@
 # from venv import create
 
-from logging_dec import create_logger, dec_calc_time, dec_exception
+import time
+from logging_dec import create_logger, dec_calc_time, dec_exception, dec_profile
 from MyException import (BaseValidationError, NotGoodError,
                          PasswordTooAnnoy, PasswordTooLong, PasswordTooShort, TooBadError)
 
@@ -33,14 +34,15 @@ def run_exception(input_value: int):
     check_exception(input_value)
 
 
-@dec_calc_time(my_logger)
+@dec_profile(my_logger)
 def main():
     my_logger.info("U are visiting main()")
-    try:
-        validate("abcqqq")
-    except BaseValidationError as err:
-        my_logger.info(f"here: {str(err)}")
-        raise
+    time.sleep(3)
+    # try:
+    #     validate("abcqqq")
+    # except BaseValidationError as err:
+    #     my_logger.info(f"here: {str(err)}")
+    #     raise
 
 
 if __name__ == "__main__":

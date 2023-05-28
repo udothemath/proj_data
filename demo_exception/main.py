@@ -1,5 +1,4 @@
-# from venv import create
-
+# %%
 import time
 from logging_dec import create_logger, dec_calc_time, dec_exception, dec_profile
 from MyException import (BaseValidationError, NotGoodError,
@@ -50,3 +49,5 @@ if __name__ == "__main__":
     main()
     run_exception(input_value=99999)
     print("--- Done ---")
+
+# %%

@@ -6,7 +6,6 @@ import os
 from dotenv import load_dotenv, find_dotenv
 aa = load_dotenv(find_dotenv())
 openai.api_key = os.getenv('OPENAI_API_KEY')
-# openai.api_key = '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'
 print(aa)
 print(openai.api_key)
 # %%
@@ -36,10 +35,14 @@ and context for the model, which can lead to \
 more detailed and relevant outputs.
 """
 prompt = f"""
-Summarize the text delimited by triple backticks \ 
+Summarize the text delimited by triple backticks \
 into a single sentence.
 \`\`\`{text}\`\`\`
 """
+
+# prompt = f""" Greeting in 50 words"""
+
+print(prompt)
 response = get_completion(prompt)
 print(response)
 # %%

@@ -32,7 +32,7 @@ def validate_card(card: CardInfo):
     return datetime(card.exp_year, card.exp_month, 1) > datetime.now()
 
 
-def main():
+def main() -> None:
     mike = Customer(
         name="Mike",
         phone="1234",

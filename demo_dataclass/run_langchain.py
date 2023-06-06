@@ -12,10 +12,10 @@ pinecone.env = os.getenv('PINECONE_ENV')
 print(pinecone.api_key)
 print(pinecone.env)
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
-print(OPENAI_API_KEY)
 
-llm = OpenAI(openai_api_key=OPENAI_API_KEY, model_name="gpt-3.5-turbo")
-llm("explain large language model in one sentence")
+llm = OpenAI(openai_api_key=OPENAI_API_KEY, model_name="text-davinci-003")
+response = llm("explain large language model in one sentence")
+print(response)
 # %%
 
 

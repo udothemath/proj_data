@@ -1,4 +1,10 @@
 # %%
+from langchain.chat_models import ChatOpenAI
+from langchain.schema import (
+    AIMessage,
+    HumanMessage,
+    SystemMessage
+)
 from langchain.llms import OpenAI
 import pinecone
 import os
@@ -13,11 +19,14 @@ print(pinecone.api_key)
 print(pinecone.env)
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
-llm = OpenAI(openai_api_key=OPENAI_API_KEY, model_name="text-davinci-003")
-response = llm("explain large language model in one sentence")
-print(response)
+# llm = OpenAI(openai_api_key=OPENAI_API_KEY, model_name="text-davinci-003")
+# response = llm("explain large language model in one sentence")
+# print(response)
 # %%
+# import schema for chat messages and ChatOpenAI in order to query chatmodels GPT-3.5-turbo or GPT-4
 
+
+# %%
 
 def run_pinecone():
 

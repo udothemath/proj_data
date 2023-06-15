@@ -68,23 +68,14 @@ second_promtp = PromptTemplate(
     template="Repeat the first response then think about {previous_response}.Explain in traditional chineses"
 )
 chain_two = LLMChain(llm=llm, prompt=second_promtp)
-
 overall_chain = SimpleSequentialChain(chains=[chain, chain_two], verbose=True)
 explanation = overall_chain.run("cross valuation")
-# %%
-
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=100, chunk_overlap=0)
-
 texts = text_splitter.create_documents([explanation])
-
 print(texts)
-# %%
 embeddings = OpenAIEmbeddings(model_name="ada")
-# %%
-query_result = embeddings.embed_query(texts[0].page_content)
-print(query_result)
-# %%
-# %%
+# query_result = embeddings.embed_query(texts[0].page_content)
+# print(query_result)
 
 
 def run_pinecone():
@@ -111,7 +102,7 @@ def run_pinecone():
     print("Done.")
 
 
-def run_prompt_pinecone():
+def run_prompt_pinecone(texts, embeddings):
     pinecone.init(api_key=pinecone.api_key, environment=pinecone.env)
     index_name = "quickstart"
     search = Pinecone.from_documents(texts, embeddings, index_name=index_name)
@@ -119,7 +110,7 @@ def run_prompt_pinecone():
     result = search.similarity_search(query)
 
 
-run_prompt_pinecone()
+run_prompt_pinecone(texts, embeddings)
 # %%
 agent_executor = create_python_agent(
     llm=OpenAI(temperature=0, max_tokens=1000),

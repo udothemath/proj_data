@@ -107,7 +107,7 @@ def run_prompt_pinecone(texts, embeddings):
     index_name = "quickstart"
     search = Pinecone.from_documents(texts, embeddings, index_name=index_name)
     query = "What is the most difficult process on autoencoder?"
-    result = search.similarity_search(query)
+    search.similarity_search(query)
 
 
 run_prompt_pinecone(texts, embeddings)

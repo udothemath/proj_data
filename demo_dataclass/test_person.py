@@ -13,14 +13,14 @@ def test_person_str():
 
 def test_person_name_type():
     with pytest.raises(TypeError) as e_info:
-        p = Person(1234, "456 Broad St")
+        Person(1234, "456 Broad St")
         print(e_info)
         raise TypeError('Name must be string')
 
 
 def test_person_address_type():
     with pytest.raises(TypeError):
-        p = Person("Bob", 1234)
+        Person("Bob", 1234)
         raise TypeError('Address must be string')
 
 

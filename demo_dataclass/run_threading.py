@@ -3,10 +3,7 @@ import queue
 import os
 import threading
 print('Hello')
-
-
 source = ["eat", "sleep", "exercise", "code", "walk", "relax"]
-
 threads_num = 4
 
 
@@ -50,7 +47,7 @@ def main():
     print('Done')
 
 
-def test_time():
+def execute_time():
     start = time.perf_counter()
     time.sleep(2)
     elapsed_time = time.perf_counter() - start
@@ -59,4 +56,4 @@ def test_time():
 
 if __name__ == "__main__":
     # main()
-    test_time()
+    execute_time()
